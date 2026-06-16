@@ -23,8 +23,32 @@ body{
 .left-content
 {
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    padding: 50px 0;
     width: 33%;
     height: 100%;
+}
+
+.left-content .box
+{
+    width: 75%;
+
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    border: 2px solid #000;
+  /* Stacked sharp offsets create a solid 3D depth */
+  box-shadow: 
+    1px 1px 0px #000,
+    2px 2px 0px #000,
+    3px 3px 0px #000,
+    4px 4px 0px #000,
+    5px 5px 0px #000,
+    6px 6px 0px #000;
 }
 
 .middle-content
@@ -37,8 +61,17 @@ body{
 .right-content
 {
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 33%;
     height: 100%;
+}
+
+.calendar-div
+{
+    width: 250px;
+    margin: 2%;
 }
 
 .mainContainer .footer
