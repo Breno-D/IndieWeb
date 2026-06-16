@@ -11,8 +11,20 @@ function App() {
       <Navbar></Navbar>
         <div class="mainContent">
             <div class="left-content">
-              <div class="box"></div>
-              <div class="box"></div>
+              <div class="box">
+                teste content
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+              </div>
+              <div class="box">
+                <br />
+                <br />
+                <br />
+                
+              </div>
               <div class="box"></div>
               <div class="box"></div>
             </div>
