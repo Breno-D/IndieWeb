@@ -8,15 +8,9 @@ function App() {
       <Header></Header>
       <Navbar></Navbar>
         <div class="mainContent">
-            <br />
-            <br />
-            <br />
-            <br />
-            <div></div>
-            <br />
-            <br />
-            <div>test</div>
-            <br />
+            <div class="left-content"></div>
+            <div class="middle-content"></div>
+            <div class="right-content"></div>
         </div>
         <div class="footer"></div>
     </div>
