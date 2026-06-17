@@ -13,7 +13,7 @@ function Leftbar() {
         </div>
         <div class="box">
             <h3>BOTÃO DO SITE</h3>
-            <div class="site-button-container"><a href="MYWEBSITE"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="zhongvie button" loading="lazy" /></a>
+            <div class="site-button-container"><a href="MYWEBSITE"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="brenordoria button" loading="lazy" /></a>
             <textarea>
                 &lt;a href="MYWEBSITE"&gt;&lt;img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="brenordoria button" loading="lazy" /&gt;&lt;/a&gt;
             </textarea>

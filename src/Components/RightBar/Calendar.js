@@ -49,9 +49,9 @@ export default function CustomCalendar() {
     <div className="calendar-container">
       {/* Header controls */}
       <div className="calendar-header">
-        <button onClick={prevMonth}>&lt;</button>
-        <h3>{MONTHS[month]} {year}</h3>
-        <button onClick={nextMonth}>&gt;</button>
+        <button onClick={prevMonth} class="month-button">&lt;</button>
+        <h3 class="month-title">{MONTHS[month]} {year}</h3>
+        <button onClick={nextMonth} class="month-button">&gt;</button>
       </div>
 
       {/* Weekday labels */}
