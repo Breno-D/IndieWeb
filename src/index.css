@@ -28,14 +28,13 @@ body{
     align-items: center;
     gap: 10px;
     padding: 50px 0;
-    width: 33%;
     height: 100%;
+    flex: 1.2;
 }
 
 .left-content .box
 {
     width: 75%;
-
     background-color: #3498db;
     color: white;
     padding: 20px;
@@ -53,7 +52,7 @@ body{
 
 .img-box
 {
-    width: 200px;
+    width: 50px;
     height: 200px;
 }
 
@@ -95,8 +94,8 @@ textarea
 .middle-content
 {
     background-color: aquamarine;
-    width: 100%;
     height: 100%;
+    flex: 3.2;
 }
 
 .right-content
@@ -105,7 +104,7 @@ textarea
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    flex: 1;
     height: 100%;
 }
 
