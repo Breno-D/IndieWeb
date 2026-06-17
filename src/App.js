@@ -19,7 +19,11 @@ function App() {
                 <p class="left-about-paragraph">Meu nome é breno e este é o meu cantinho para guardar todas as minhas coisas, meu doces, meus jogos e as game jams que participo :D</p>
               </div>
               <div class="box">
-                <a href="https://zhongvie.neocities.org/"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="zhongvie button" loading="lazy" /></a>
+                <h3>BOTÃO DO SITE</h3>
+                <div class="site-button-container"><a href="https://zhongvie.neocities.org/"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="zhongvie button" loading="lazy" /></a>
+                <textarea>
+                  <a href="https://zhongvie.neocities.org/"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="zhongvie button" loading="lazy" /></a>
+                </textarea></div>
               </div>
               <div class="box"></div>
             </div>

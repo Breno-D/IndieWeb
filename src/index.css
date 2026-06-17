@@ -17,7 +17,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     background-color: lightgray;
 }
 .left-content
@@ -73,6 +73,24 @@ body{
     margin-top: 0;
     font-size: 12px;
 }
+
+.box h3
+{
+    text-align: center;
+}
+
+textarea
+{
+    width: 50%;
+}
+
+.site-button-container
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
 
 .middle-content
 {
