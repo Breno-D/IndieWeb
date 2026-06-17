@@ -11,21 +11,16 @@ function App() {
       <Navbar></Navbar>
         <div class="mainContent">
             <div class="left-content">
-              <div class="box">
-                teste content
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+              <div class="box img-box">
+                <img class="img-highlight" src="https://picsum.photos/id/237/200/300"></img>
               </div>
               <div class="box">
-                <br />
-                <br />
-                <br />
-                
+                <h4 class="left-about-title">Oláá</h4>
+                <p class="left-about-paragraph">Meu nome é breno e este é o meu cantinho para guardar todas as minhas coisas, meu doces, meus jogos e as game jams que participo :D</p>
               </div>
-              <div class="box"></div>
+              <div class="box">
+                <a href="https://zhongvie.neocities.org/"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="zhongvie button" loading="lazy" /></a>
+              </div>
               <div class="box"></div>
             </div>
             <div class="middle-content"></div>
