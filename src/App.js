@@ -14,16 +14,15 @@ function App() {
             <Leftbar></Leftbar>
             <div class="middle-content"></div>
             <div class="right-content">
-              <div class="calendar-div">
+              <div class="calendar-div box">
                 <Calendar />
               </div>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
             </div>
         </div>
         <div class="footer"></div>
