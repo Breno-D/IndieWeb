@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header/Header.js'
 import Navbar from './Components/Header/Navbar.js';
 import Leftbar from './Components/LeftBar/Leftbar.js';
-import Calendar from 'react-calendar';
+import Calendar from './Components/RightBar/Calendar.js';
 import 'react-calendar/dist/Calendar.css';
 
 function App() {
