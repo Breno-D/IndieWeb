@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Calendar.css'; 
 
-const WEEKDAYS = ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'];
+const WEEKDAYS = ['D', 'Se', 'T', 'Q', 'Qui', 'S', 'Sa'];
 const MONTHS = [
   'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
   'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'
@@ -49,9 +49,9 @@ export default function CustomCalendar() {
     <div className="calendar-container">
       {/* Header controls */}
       <div className="calendar-header">
-        <button onClick={prevMonth} class="month-button">&lt;</button>
-        <h3 class="month-title">{MONTHS[month]} {year}</h3>
-        <button onClick={nextMonth} class="month-button">&gt;</button>
+        <button onClick={prevMonth} className="month-button">&lt;</button>
+        <h3 className="month-title">{MONTHS[month]} {year}</h3>
+        <button onClick={nextMonth} className="month-button">&gt;</button>
       </div>
 
       {/* Weekday labels */}
