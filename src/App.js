@@ -3,7 +3,8 @@ import Header from './Components/Header/Header.js'
 import Navbar from './Components/Header/Navbar.js';
 import Leftbar from './Components/LeftBar/Leftbar.js';
 import Calendar from './Components/RightBar/Calendar.js';
-import 'react-calendar/dist/Calendar.css';
+import FactOfTheDay from './Components/RightBar/FactOfTheDay.js';
+
 
 import powered from './Images/poweredbycoffee.gif';
 import freeinternet from './Images/internetfree.gif';
@@ -46,8 +47,14 @@ function App() {
                   <a href='https://emubrowser.com/' target='blank'><img src={piracy}></img></a>
                 </div>
               </div>
-              <div className="box"></div>
-              <div className="box"></div>
+              <div className="box highlight-art-box">
+                <h3>Arte Recente</h3>
+                <img src='https://picsum.photos/200/300?grayscale' className='highlight-art'></img>
+              </div>
+              <div className="box">
+                <h3>Fato do Dia</h3>
+                <FactOfTheDay></FactOfTheDay>
+              </div>
               <div className="box"></div>
               <div className="box"></div>
               <div className="box"></div>

@@ -1,0 +1,23 @@
+.card 
+{
+    padding: 20px;
+    color: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: system-ui, -apple-system, sans-serif;
+    text-align: center;
+}
+
+.title 
+{
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.factText 
+{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}

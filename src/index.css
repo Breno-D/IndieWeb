@@ -42,6 +42,7 @@ body{
 .box h3, h6
 {
     text-align: center;
+    margin: 0px 0px 5px 0px;
 }
 
 
@@ -81,6 +82,20 @@ body{
     gap: 5px;
     justify-content: center;
     align-items: center;
+}
+
+.highlight-art-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-art
+{
+    width: 200px;
+    height: 200px;
 }
 
 .mainContainer .footer
