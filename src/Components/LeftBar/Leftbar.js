@@ -1,5 +1,6 @@
 import './Leftbar.css';
 import'../../index.css';
+import mybutton from '../../myButton.gif'
 
 function Leftbar() {
   return (
@@ -13,8 +14,8 @@ function Leftbar() {
         </div>
         <div className="box">
             <h3>Botão do Site</h3>
-            <div className="site-button-container"><a href="MYWEBSITE"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="brenordoria button" loading="lazy" /></a>
-                <textarea defaultValue={'<a href="MYWEBSITE"><img src="https://file.garden/Zq0xOX6Iv3i3b1te/Neocities/sylvieButton.gif" alt="brenordoria button" loading="lazy" /><a/>'}>
+            <div className="site-button-container"><a href="MYWEBSITE"><img src={mybutton} alt="brenordoria button" /></a>
+                <textarea defaultValue={'<a href="MYWEBSITE"><img src="MYBUTTONWEBSITE" alt="brenordoria button" loading="lazy" /><a/>'}>
                 </textarea>
             </div>
             <h6>Diga não aos Hotlinks</h6>

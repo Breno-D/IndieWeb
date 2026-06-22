@@ -17,7 +17,7 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 1000vh;
+    height: 100%;
     background-color: lightgray;
 }
 
@@ -63,20 +63,59 @@ body{
     gap: 20px;
 }
 
-.middle-content > *:first-child {
+.middle-content > *:first-child 
+{
   margin-top: 50px; 
 }
 
-.mainContent-box a:link {
+.mainContent-box a:link 
+{
   color: #F25912;
   background-color: transparent;
   font-size: 12px;
 }
 
-.mainContent-box a:visited {
+.mainContent-box a:visited 
+{
   color: #211832;
   background-color: transparent;
   text-decoration: none;
+}
+
+.home-about
+{
+    display: flex;
+    gap: 50px;
+}
+
+.home-about img
+{
+    width: 150px;
+    height: 300px;
+}
+
+.home-about-text
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gamejam-article
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gamejam-banner
+{
+    align-self: center;
+    width: 90%;
+    height: 200px;
+}
+
+.game-iframe
+{
+    align-self: center;
 }
 
 .mainContainer .footer

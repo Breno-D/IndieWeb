@@ -21,9 +21,24 @@ function App() {
               </div>
               <div className='box mainContent-box'>
                 <h3>Sobre Mim</h3>
+                <div className='home-about'>
+                  <img  src='https://picsum.photos/seed/picsum/200/300'></img>
+                  <div className='home-about-text'>
+                    <p>Eu sou um programador - programo de tudo, mas minha especialidade é desenvolvimento de jogos - e confeiteiro amador!</p>
+                    <p>Para falar a verdade eu nunca criei uma página minha na antiga geocities, apesar de ter visitado vários sites da antiag internet na minha infância</p>
+                    <p>Você pode ler mais sobre mim nesse <a href='MYLINK/ABOUT'>link</a></p>
+                  </div>
+                  
+                </div>
               </div>
               <div className='box mainContent-box'>
                 <h3>Última Game Jam</h3>
+                <div className='gamejam-article'>
+                    <img className='gamejam-banner' src='https://picsum.photos/seed/picsum/200/300'></img>
+                    <p>TesLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap int</p>
+                    <p>Genero: aserijaserijase</p>
+                    <iframe className='game-iframe' frameborder="0" src="https://itch.io/embed/4443160?linkback=true&amp;border_width=2&amp;bg_color=211832&amp;fg_color=ffffff&amp;link_color=F25912&amp;border_color=F25912" width="554" height="169"><a href="https://breno-d.itch.io/wild-flowers">Wild Flowers by Breno-D</a></iframe>
+                </div>
               </div>
               <div className='box mainContent-box'>
                 <h3>Blog</h3>
