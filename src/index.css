@@ -68,6 +68,10 @@ body{
   margin-top: 50px; 
 }
 
+.middle-content > *:last-child {
+  margin-bottom: 25px; 
+}
+
 .mainContent-box a:link 
 {
   color: #F25912;
