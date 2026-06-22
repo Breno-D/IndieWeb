@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.js'
 import Navbar from './Components/Header/Navbar.js';
 import Leftbar from './Components/LeftBar/Leftbar.js';
 import RightBar from './Components/RightBar/RightBar.js';
+import BlogPreview from "./Components/Blog/BlogPreview";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
               </div>
               <div className='box mainContent-box'>
                 <h3>Blog</h3>
+                <BlogPreview></BlogPreview>
               </div>
               <div className='box mainContent-box'>
                 <h3>Último Jogo Lançado</h3>
