@@ -67,6 +67,18 @@ body{
   margin-top: 50px; 
 }
 
+.mainContent-box a:link {
+  color: #F25912;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+.mainContent-box a:visited {
+  color: #211832;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .mainContainer .footer
 {
     height: 10vh;

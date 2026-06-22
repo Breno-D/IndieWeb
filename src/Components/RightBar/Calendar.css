@@ -44,7 +44,7 @@
   cursor: pointer;
   font-size: 12px;
   background-color: #412B6B;
-  color: orangered;
+  color: #F25912;
 }
 
 .day:hover {
@@ -52,7 +52,7 @@
 }
 
 .today {
-  background-color: orangered;
+  background-color: #F25912;
   color: black;
   font-weight: bold;
   font-size: 15px;
@@ -61,7 +61,7 @@
 .month-button
 {
     background-color: #412B6B;
-    color: orangered;
+    color: #F25912;
 }
 
 .month-button:hover
