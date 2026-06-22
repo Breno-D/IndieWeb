@@ -13,12 +13,24 @@ function App() {
         <div className="mainContent">
             <Leftbar></Leftbar>
             <div className="middle-content">
-              <div className='box mainContent-box'></div>
-              <div className='box mainContent-box'></div>
-              <div className='box mainContent-box'></div>
-              <div className='box mainContent-box'></div>
-              <div className='box mainContent-box'></div>
-              <div className='box mainContent-box'></div>
+              <div className='box mainContent-box'>
+                <h3>Introdução do Site</h3>
+              </div>
+              <div className='box mainContent-box'>
+                <h3>Sobre Mim</h3>
+              </div>
+              <div className='box mainContent-box'>
+                <h3>Última Game Jam</h3>
+              </div>
+              <div className='box mainContent-box'>
+                <h3>Blog</h3>
+              </div>
+              <div className='box mainContent-box'>
+                <h3>Último Jogo Lançado</h3>
+              </div>
+              <div className='box mainContent-box'>
+                <h3>Galeria de Comidinhas</h3>
+              </div>
             </div>
             <RightBar></RightBar>
         </div>

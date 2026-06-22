@@ -50,8 +50,6 @@ function RightBar() {
         <div className="box">
             <Changelog></Changelog>
         </div>
-        <div className="box"></div>
-        <div className="box"></div>
     </div>
   );
 }
