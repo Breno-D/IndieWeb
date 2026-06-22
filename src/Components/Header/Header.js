@@ -3,8 +3,8 @@ import './Header.css';
 function Header() {
   return (
     <div className="header">
-          <h1>Titulo bem maneiro</h1>
-          <h4>Subtitulo sera?</h4>
+          <h1>Cantinho do Breno</h1>
+          <h4></h4>
     </div>
   );
 }

@@ -298,7 +298,7 @@ function FactOfTheDay ()
   "10-10": "Emerson Fittipaldi conquistou em 1972 o Grande Prêmio da Itália em Monza, tornando-se o primeiro brasileiro campeão mundial de Formula 1",
   "10-11": "é o Dia do Teatro Municipal",
   "10-12": "em 1931 foi inaugurado o Cristo Redentor",
-  "10-13": "é o Dia Internacional para a Redução de Catástrofes",
+  "10-13": "é o Aniversário do meu amor, parabéns baby!! <3<3",
   "10-14": "é o Dia do Meteorologista",
   "10-15": "é o Dia do Professor",
   "10-16": "é o Dia Mundial da Alimentação",

@@ -15,6 +15,7 @@ function App() {
             <div className="middle-content">
               <div className='box mainContent-box'>
                 <h3>Introdução do Site</h3>
+                <p></p>
               </div>
               <div className='box mainContent-box'>
                 <h3>Sobre Mim</h3>
