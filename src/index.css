@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    height: 10000px;
+    /* height: 10000px; */
 }
 
 .mainContainer{
@@ -24,19 +24,19 @@ body{
 .box
 {
     width: 75%;
-    background-color: #3498db;
-    color: white;
+    background-color: #5C3E94;
+    color: black;
     padding: 15px;
     font-weight: bold;
-    border: 2px solid #000;
+    border: 2px solid #211832;
   /* Stacked sharp offsets create a solid 3D depth */
   box-shadow: 
-    1px 1px 0px #000,
-    2px 2px 0px #000,
-    3px 3px 0px #000,
-    4px 4px 0px #000,
-    5px 5px 0px #000,
-    6px 6px 0px #000;
+    1px 1px 0px #211832,
+    2px 2px 0px #211832,
+    3px 3px 0px #211832,
+    4px 4px 0px #211832,
+    5px 5px 0px #211832,
+    6px 6px 0px #211832;
 }
 
 .box h3, h6
@@ -45,57 +45,24 @@ body{
     margin: 0px 0px 5px 0px;
 }
 
+.mainContent-box
+{
+    width: 85%;
+}
 
 .middle-content
 {
-    background-color: aquamarine;
+    background-color: #8B6BC4;
     height: 100%;
     flex: 3.2;
-}
-
-.right-content
-{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding: 50px 0;
-    height: 100%;
-    flex: 1.2;
+    gap: 20px;
 }
 
-.buttons-box
-{
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.buttons-div
-{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.highlight-art-box
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.highlight-art
-{
-    width: 200px;
-    height: 200px;
+.middle-content > *:first-child {
+  margin-top: 50px; 
 }
 
 .mainContainer .footer

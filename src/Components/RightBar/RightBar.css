@@ -1,0 +1,44 @@
+.right-content
+{
+    background-color: #8B6BC4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+    height: 100%;
+    flex: 1.2;
+}
+
+.buttons-box
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-div
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-art-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-art
+{
+    width: 200px;
+    height: 200px;
+}

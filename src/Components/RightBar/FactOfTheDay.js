@@ -307,7 +307,7 @@ function FactOfTheDay ()
   "10-19": "é o Dia do Profissional de TI",
   "10-20": "é o Dia do Poeta",
   "10-21": "é o Dia Nacional da Alimentação Escolar",
-  "10-22": "é o Dia do PAraquedista",
+  "10-22": "é o Dia do Paraquedista",
   "10-23": "é a data do histórico primeiro voo do 14-Bis realizado por Alberto Santos Dumont em Paris, no ano de 1906, consolidando um marco fundamental para a história da aviação mundial",
   "10-24": "é o Dia Mundial de Combate à Poliomielite",
   "10-25": "é o Dia do Dentista Brasileiro",
