@@ -12,6 +12,7 @@
 {
     float: left;
     display: block;
+    font-weight: bold;
     color: black;
     text-align: center;
     padding: 1rem 1.5rem;

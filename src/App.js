@@ -7,6 +7,8 @@ import BlogPreview from "./Components/Blog/BlogPreview";
 import GameJamPreview from "./Components/GameJam/GameJamPreview.js";
 import LatestGameRelease from "./Components/GameJam/LatestGameRelease.js";
 
+import Footer from './Components/Footer/Footer.js';
+
 function App() {
   return (
     <div className="mainContainer">
@@ -27,7 +29,7 @@ function App() {
                   <img  src='https://picsum.photos/seed/picsum/200/300'></img>
                   <div className='home-about-text'>
                     <p>Eu sou um programador - programo de tudo, mas minha especialidade é desenvolvimento de jogos - e confeiteiro amador!</p>
-                    <p>Para falar a verdade eu nunca criei uma página minha na antiga geocities, apesar de ter visitado vários sites da antiag internet na minha infância</p>
+                    <p>Para falar a verdade eu nunca criei uma página minha na antiga geocities, apesar de ter visitado vários sites da antiga internet na minha infância</p>
                     <p>Você pode ler mais sobre mim nesse <a href='MYLINK/ABOUT'>link</a></p>
                   </div>
                   
@@ -59,15 +61,7 @@ function App() {
             </div>
             <RightBar></RightBar>
         </div>
-        <div className="footer">
-          <p>© 2026 Breno R. D. Todos Direitos Reservados.</p>
-          <div className='footer-links'>
-            <a href='google.com'>Sobre</a>
-            <a href='google.com'>Ambrosia</a>
-            <a href='google.com'>GameJams</a>
-            <a href='google.com'>Blog</a>
-          </div>
-        </div>
+        <Footer></Footer>
     </div>
   );
 }
