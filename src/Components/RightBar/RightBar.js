@@ -1,5 +1,5 @@
 import './RightBar.css';
-import'../../index.css';
+import'../../Pages/index.css';
 import Calendar from './Calendar.js';
 import FactOfTheDay from './FactOfTheDay.js';
 import Changelog from './Changelog.js';

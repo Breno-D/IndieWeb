@@ -1,5 +1,5 @@
 import './Leftbar.css';
-import'../../index.css';
+import'../../Pages/index.css';
 import mybutton from '../../myButton.gif'
 
 function Leftbar() {
