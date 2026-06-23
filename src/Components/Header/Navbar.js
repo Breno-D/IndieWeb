@@ -5,10 +5,10 @@ function Navbar() {
     <div className="navbar">
         <a href="/">INICIO</a>
         <a href="about">SOBRE</a>
-        <a href="#home">AMBROSIA</a>
-        <a href="#home">BACKLOG</a>
-        <a href="#home">JOGUINHOS</a>
-        <a href="#home">GAME JAM</a>     
+        <a href="ambrosia">AMBROSIA</a>
+        <a href="blog">BLOG</a>
+        <a href="jogos">JOGOS</a>
+        <a href="game-jam">GAME JAM</a>     
     </div>
   );
 }

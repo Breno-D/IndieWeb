@@ -9,7 +9,7 @@ import LatestGameRelease from "../../Components/GameJam/LatestGameRelease.js";
 
 import Footer from '../../Components/Footer/Footer.js';
 
-function About() {
+function GameJamAtual() {
   return (
     <div className="mainContainer">
       <Header></Header>
@@ -66,4 +66,4 @@ function About() {
   );
 }
 
-export default About;
+export default GameJamAtual;

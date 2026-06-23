@@ -9,13 +9,12 @@ import LatestGameRelease from "../../Components/GameJam/LatestGameRelease.js";
 
 import Footer from '../../Components/Footer/Footer.js';
 
-function About() {
+function Blog() {
   return (
     <div className="mainContainer">
       <Header></Header>
       <Navbar></Navbar>
         <div className="mainContent">
-            <Leftbar></Leftbar>
             <div className="middle-content">
               <div className='box mainContent-box'>
                 <h3>Introdução do Site</h3>
@@ -59,11 +58,10 @@ function About() {
                 </div>
               </div>
             </div>
-            <RightBar></RightBar>
         </div>
         <Footer></Footer>
     </div>
   );
 }
 
-export default About;
+export default Blog;
