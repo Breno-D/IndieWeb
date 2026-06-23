@@ -120,8 +120,34 @@ body{
 
 .mainContainer .footer
 {
-    height: 10vh;
+
     /* width: 100%; */
-    background-color: lightblue;
-    border: 1px solid black;
+    background-color: #412B6B;
+    border: 3px solid #211832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p
+{
+    font-size: 15px;
+}
+
+.footer-links
+{
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-links a:link
+{
+    color: #F25912;
+}
+
+.footer-links a:visited
+{
+    color: #211832;
 }
