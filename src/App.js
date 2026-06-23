@@ -4,7 +4,8 @@ import Navbar from './Components/Header/Navbar.js';
 import Leftbar from './Components/LeftBar/Leftbar.js';
 import RightBar from './Components/RightBar/RightBar.js';
 import BlogPreview from "./Components/Blog/BlogPreview";
-
+import GameJamPreview from "./Components/GameJam/GameJamPreview.js";
+import LatestGameRelease from "./Components/GameJam/LatestGameRelease.js";
 
 function App() {
   return (
@@ -34,12 +35,7 @@ function App() {
               </div>
               <div className='box mainContent-box'>
                 <h3>Última Game Jam</h3>
-                <div className='gamejam-article'>
-                    <img className='gamejam-banner' src='https://picsum.photos/seed/picsum/200/300'></img>
-                    <p>TesLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap int</p>
-                    <p>Genero: aserijaserijase</p>
-                    <iframe className='game-iframe' frameborder="0" src="https://itch.io/embed/4443160?linkback=true&amp;border_width=2&amp;bg_color=211832&amp;fg_color=ffffff&amp;link_color=F25912&amp;border_color=F25912" width="554" height="169"><a href="https://breno-d.itch.io/wild-flowers">Wild Flowers by Breno-D</a></iframe>
-                </div>
+                  <GameJamPreview></GameJamPreview>
               </div>
               <div className='box mainContent-box'>
                 <h3>Blog</h3>
@@ -47,9 +43,18 @@ function App() {
               </div>
               <div className='box mainContent-box'>
                 <h3>Último Jogo Lançado</h3>
+                <LatestGameRelease></LatestGameRelease>
               </div>
               <div className='box mainContent-box'>
                 <h3>Galeria de Comidinhas</h3>
+                <div className='food-carrousel'>
+                  <img src='https://picsum.photos/200'></img>
+                  <img src='https://picsum.photos/200'></img>
+                  <img src='https://picsum.photos/200'></img>
+                  <img src='https://picsum.photos/200'></img>
+                  <img src='https://picsum.photos/200'></img>
+                  <img src='https://picsum.photos/200'></img>
+                </div>
               </div>
             </div>
             <RightBar></RightBar>

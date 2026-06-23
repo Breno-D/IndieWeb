@@ -1,4 +1,4 @@
-import posts from "../../posts";
+import posts from "../../posts-blog";
 import BlogPost from "./BlogPost";
 
 export default function BlogPage() {

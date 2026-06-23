@@ -1,0 +1,29 @@
+.gamejam-article
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gamejam-article h4
+{
+    align-self: center;
+    text-decoration: underline;
+}
+
+.gamejam-article p
+{
+    font-size: 0.8rem;
+}
+
+.gamejam-banner
+{
+    align-self: center;
+    width: 90%;
+    height: 200px;
+}
+
+.game-iframe
+{
+    align-self: center;
+}

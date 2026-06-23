@@ -104,23 +104,19 @@ body{
     flex-direction: column;
 }
 
-.gamejam-article
+.food-carrousel
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.gamejam-banner
+.food-carrousel img
 {
-    align-self: center;
-    width: 90%;
-    height: 200px;
+    flex: 0 0 25%;
+    box-sizing: border-box;
 }
 
-.game-iframe
-{
-    align-self: center;
-}
 
 .mainContainer .footer
 {
