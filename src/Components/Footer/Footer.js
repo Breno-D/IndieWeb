@@ -5,10 +5,10 @@ function Footer() {
     <div className="footer">
         <p>© 2026 Breno R. D. Todos Direitos Reservados.</p>
         <div className='footer-links'>
-            <a href='google.com'>Sobre</a>
-            <a href='google.com'>Ambrosia</a>
-            <a href='google.com'>GameJams</a>
-            <a href='google.com'>Blog</a>
+            <a href='/about'>Sobre</a>
+            <a href='/ambrosia'>Ambrosia</a>
+            <a href='/blog'>Blog</a>
+            <a href='/jogos'>Jogos</a>
         </div>
     </div>
   );

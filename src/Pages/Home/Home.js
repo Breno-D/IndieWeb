@@ -30,7 +30,7 @@ function Home() {
                   <div className='home-about-text'>
                     <p>Eu sou um programador - programo de tudo, mas minha especialidade é desenvolvimento de jogos - e confeiteiro amador!</p>
                     <p>Para falar a verdade eu nunca criei uma página minha na antiga geocities, apesar de ter visitado vários sites da antiga internet na minha infância</p>
-                    <p>Você pode ler mais sobre mim nesse <a href='MYLINK/ABOUT'>link</a></p>
+                    <p>Você pode ler mais sobre mim nesse <a href='/about'>link</a></p>
                   </div>
                   
                 </div>
