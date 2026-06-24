@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #8B6BC4;
     /* height: 10000px; */
 }
 
@@ -18,7 +19,7 @@ body{
     flex-direction: row;
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-color: #8B6BC4;
 }
 
 .box

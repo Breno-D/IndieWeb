@@ -1,0 +1,40 @@
+.basic-info
+{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.basic-info-text
+{
+    flex: 3;
+}
+
+.basic-info-text p
+{
+    margin: 0px;
+}
+
+.basic-info-image
+{
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+.divline
+{
+    border-radius: 25%;
+    align-self: center;
+    margin-top: 10px;
+    width: 90%;
+    border: 2px solid black;
+}
+
+.bigabout
+{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
