@@ -1,13 +1,21 @@
-import cover from '../Components/RightBar/Images/emulate.gif'
+import cover from './Images/postgj-002.png'
 
 export default {
   id: "postgj-002",
-  title: "Meu primeiro post",
-  date: "2026-06-01",
-  summary: "Lorem Ipsum is simply dummy text  of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.",
+  title: "Zero/Zero",
   content: `
-    Conteúdo completo do post aqui.
-    Pode ser texto longo, múltiplos parágrafos, etc.
+    Jogo desenvolvido em equipe em meados de 2021 (apesar de fora de ordem, é por que o travessurras é o meu favorito dos jogos antigos), fui responsável por toda a programação do jogo
+
+    Este jogo foi desenvolvido para uma gamejam, mas ela não está mais listada no itch, logo não saberei qual foi o tema ou como fomos nas avaliações
+
+    O jogo é a história de Ein e Haw contando a história de como o universo (dentro do universo deste jogo) foi criado. 
+    É um jogo top down de puzzle que paga tributo aos antigos jogos de se jogar no sofa com os seus amigos, pois ele é split-screen, ou seja, ambos os jogadoers jogam na mesma maquina e a camera se divide quando estão muito longe e se junta quando chegam perto!
+
+    Ambos os jogadores jogam no mesmo teclado e cada um dos personagens tem um poder específico, o Ein é a própria luz e pode empurrar objetos para longe; já o Haw é a própria escuridão e pode atrair objetos para si
   `,
-  cover
+  cover,
+  iframe: "https://welintonfaria.itch.io/zerozero",
+  iframetitle: "Zero/Zero by Breno-D",
+  iframesrc: "https://itch.io/embed/991408",
+  gamegender: "Puzzle, Topdown, Co-op"
 };
