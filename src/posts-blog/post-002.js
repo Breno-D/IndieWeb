@@ -8,6 +8,9 @@ export default {
   content: `
     Conteúdo completo do post aqui.
     Pode ser texto longo, múltiplos parágrafos, etc.
+
+
+    teste de paragrafo
   `,
   cover
 };

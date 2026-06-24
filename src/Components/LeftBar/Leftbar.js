@@ -18,7 +18,7 @@ function Leftbar() {
                 <textarea defaultValue={'<a href="MYWEBSITE"><img src="MYBUTTONWEBSITE" alt="brenordoria button" loading="lazy" /><a/>'}>
                 </textarea>
             </div>
-            <h6>Diga não aos Hotlinks</h6>
+            <h6>Não fazer Hotlink</h6>
         </div>
         <div className="box game-highlight">
             <h3>Ultimo Jogo Zerado</h3>

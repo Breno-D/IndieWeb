@@ -8,7 +8,7 @@ function Navbar() {
         <a href="ambrosia">AMBROSIA</a>
         <a href="blog">BLOG</a>
         <a href="jogos">JOGOS</a>
-        <a href="game-jam">GAME JAM</a>     
+        <a href="game-dev">COMO CRIAR JOGOS</a>     
     </div>
   );
 }

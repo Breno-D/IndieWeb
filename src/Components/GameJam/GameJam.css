@@ -26,4 +26,22 @@
 .game-iframe
 {
     align-self: center;
+    margin-top: 20px;
+    background-color: #211832;
+}
+
+.gamejam-post h2
+{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.gamejam-post p
+{
+    font-size: 15px;
+}
+
+iframe .game_summary
+{
+    background-color: black;
 }
