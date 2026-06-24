@@ -40,7 +40,7 @@ function Home() {
                   <GameJamPreview></GameJamPreview>
               </div>
               <div className='box mainContent-box'>
-                <h3>Blog</h3>
+                <h3>Blog Mais Recente</h3>
                 <BlogPreview></BlogPreview>
               </div>
               <div className='box mainContent-box'>
