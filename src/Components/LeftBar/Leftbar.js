@@ -1,13 +1,14 @@
 import './Leftbar.css';
 import'../../Pages/index.css';
-import mybutton from '../../myButton.gif'
-import gamehighlight from './gamehighlight.jpg'
+import mybutton from '../../myButton.gif';
+import gamehighlight from './gamehighlight.jpg';
+import pagehighlight from './pagehighlight.gif';
 
 function Leftbar() {
   return (
     <div className="left-content">
         <div className="box img-box">
-            <img className="img-highlight" src="https://picsum.photos/id/237/200/300"></img>
+            <img className="img-highlight" src={pagehighlight}></img>
         </div>
         <div className="box">
             <h4 className="left-about-title">Oláá</h4>
