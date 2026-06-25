@@ -1,6 +1,7 @@
 import './Leftbar.css';
 import'../../Pages/index.css';
 import mybutton from '../../myButton.gif'
+import gamehighlight from './gamehighlight.jpg'
 
 function Leftbar() {
   return (
@@ -22,7 +23,8 @@ function Leftbar() {
         </div>
         <div className="box game-highlight">
             <h3>Ultimo Jogo Zerado</h3>
-            <a href="https://store.steampowered.com/app/2435410/Trials_Of_Randoom/" target='blank'><img class="game-highlight-image" src="https://picsum.photos/id/870/200/300?grayscale&blur=2"></img></a> 
+            <a href="https://store.steampowered.com/app/601840/Griftlands/" target='blank'><img class="game-highlight-image" src={gamehighlight}></img></a> 
+            <p>Se tirar o primeiro personagem 8/10+</p>
         </div>
     </div>
   );

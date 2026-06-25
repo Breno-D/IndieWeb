@@ -46,3 +46,13 @@ iframe .game_summary
 {
     background-color: black;
 }
+
+.latest-banner
+{
+    height: 250px;
+}
+
+.downloadbutton
+{
+    align-self: center;
+}

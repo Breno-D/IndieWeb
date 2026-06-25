@@ -9,7 +9,7 @@ export default function BlogPreview() {
       <p>{latest.summary}</p>
       {/* <img src={latest.cover}></img> */}
       <p>incluindo um paragrafo para testar</p>
-      <a href="#blog">Ver todos os posts →</a>
+      <a href="/blog">Ver todos os posts →</a>
     </div>
   );
 }

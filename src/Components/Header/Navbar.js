@@ -1,14 +1,15 @@
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <div className="navbar">
-        <a href="/">INICIO</a>
-        <a href="about">SOBRE</a>
-        <a href="ambrosia">AMBROSIA</a>
-        <a href="blog">BLOG</a>
-        <a href="jogos">JOGOS</a>
-        <a href="game-dev">COMO CRIAR JOGOS</a>     
+      <Link to="/">INICIO</Link>
+      <Link to="/about">SOBRE</Link>
+      <Link to="/ambrosia">AMBROSIA</Link>
+      <Link to="/blog">BLOG</Link>
+      <Link to="/jogos">JOGOS</Link>
+      <Link to="/game-dev">COMO CRIAR JOGOS</Link>
     </div>
   );
 }

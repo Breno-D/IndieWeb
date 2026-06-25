@@ -19,7 +19,9 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="/ambrosia" element={<Ambrosia />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:page" element={<Blog />} />
         <Route path="/jogos" element={<Jogos />} />
+        <Route path="/jogos/:page" element={<Jogos />} />
         <Route path="/game-dev" element={<GameDevTutorial />} />
       </Routes>
     </BrowserRouter>

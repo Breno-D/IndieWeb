@@ -1,4 +1,4 @@
-import cover from '../Components/RightBar/Images/emulate.gif'
+import cover from './Images/postgj-004.png'
 
 export default {
   id: "postgj-004",

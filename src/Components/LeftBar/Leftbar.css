@@ -47,7 +47,7 @@ textarea
 .game-highlight-image
 {
     width: 200px;
-    height: 200px;
+    height: 150px;
 }
 
 .game-highlight
@@ -55,4 +55,11 @@ textarea
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.game-highlight p
+{
+    font-size: 12px;
 }

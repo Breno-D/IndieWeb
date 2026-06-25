@@ -122,4 +122,13 @@ body{
     box-sizing: border-box;
 }
 
-
+.pagination-buttons
+{
+    background-color: #5C3E94;
+    color: #F25912;
+    border: 1px solid #211832;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
