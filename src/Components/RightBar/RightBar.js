@@ -13,6 +13,7 @@ import emulate from './Images/emulate.gif';
 import glinks from './Images/glinks.gif'
 import linux from './Images/linux_powered.gif';
 import piracy from './Images/piracy.gif';
+import imglatest from './Images/imghighlight.png';
 
 function RightBar() {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -43,7 +44,7 @@ function RightBar() {
         </div>
         <div className="box highlight-art-box">
             <h3>Arte Recente</h3>
-                <img src='https://picsum.photos/200/300?grayscale' className='highlight-art'></img>
+                <img src={imglatest} className='highlight-art'></img>
         </div>
         <div className="box">
             <h3>Fato do Dia</h3>
