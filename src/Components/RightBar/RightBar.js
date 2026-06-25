@@ -3,6 +3,7 @@ import'../../Pages/index.css';
 import Calendar from './Calendar.js';
 import FactOfTheDay from './FactOfTheDay.js';
 import Changelog from './Changelog.js';
+import { Link } from 'react-router-dom';
 
 import powered from './Images/poweredbycoffee.gif';
 import freeinternet from './Images/internetfree.gif';
@@ -14,6 +15,7 @@ import linux from './Images/linux_powered.gif';
 import piracy from './Images/piracy.gif';
 
 function RightBar() {
+    const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
   return (
     <div className="right-content">
         <div className="calendar-div box">
@@ -31,7 +33,7 @@ function RightBar() {
                 </a>
                 <iframe src="//incr.easrng.net/badge?key=asuraid" style={{background:'url(//incr.easrng.net/bg.gif)', border:'none'}}  title="increment badge" width="88" height="31"></iframe>
                 <a href='https://indieweb.org/' target='blank'><img src={freeinternet}></img></a>
-                <a href='#AMBROSIA'><img src={candy}></img></a>
+                <Link to='/ambrosia' onClick={scrollToTop}><img src={candy}></img></Link>
                 <a href='https://breno-d.itch.io/' target='blank'><img src={glinks}></img></a>
                 <a href='https://emulation.gametechwiki.com/index.php/ROM_%26_ISO_sites' target='blank'><img src={emulate}></img></a>
                 <a href='https://zorin.com/os/download/' target='blank'><img src={linux}></img></a>
