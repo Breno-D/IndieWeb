@@ -7,13 +7,14 @@ import AmbrosiaPage from '../../Components/Ambrosia/AmbrosiaPage.js'
 import Footer from '../../Components/Footer/Footer.js';
 
 function Ambrosia() {
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
   return (
     <div className="mainContainerAmbrosia">
       <img className='img-headerAmbrosia' src='https://picsum.photos/200/300'></img>
         <div className="mainContentAmbrosia">
             <div className="middlecontentambrosia">
                 <AmbrosiaPage></AmbrosiaPage>
-                <Link to='/'><button className='pagination-buttons'>Voltar ao Site</button></Link>
+                <Link to='/' onClick={scrollToTop}><button className='pagination-buttons'>Voltar ao Site</button></Link>
             </div>
         </div>
         <Footer></Footer>
