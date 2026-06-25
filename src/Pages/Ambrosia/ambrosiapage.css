@@ -154,7 +154,7 @@
     margin-bottom: 5px;
 }
 
-.footer
+.mainContainerAmbrosia .footer
 {
 
     /* width: 100%; */
@@ -165,12 +165,12 @@
     align-items: center;
 }
 
-.footer-links a:link
+.mainContainerAmbrosia .footer-links a:link
 {
     color: #E38014;
 }
 
-.footer-links a:visited
+.mainContainerAmbrosia .footer-links a:visited
 {
     color: #FDFFFC;
 }

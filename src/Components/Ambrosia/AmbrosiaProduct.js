@@ -1,5 +1,5 @@
 import wppimage from "../../Pages/Ambrosia/whatsapp.png"
-import '../../Pages/Ambrosia/ambrosia.css'
+import '../../Pages/Ambrosia/ambrosiapage.css'
 
 export default function AmbrosiaProduct({ product }) {
   return (
