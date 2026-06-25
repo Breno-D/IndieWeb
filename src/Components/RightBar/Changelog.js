@@ -6,7 +6,7 @@ import './Changelog.css';
 export default function Changelog() {
   return (
     <div className='changelog-box'>
-      <h4>Changelog</h4>
+      <h3>Changelog</h3>
       {changelogData.map((release) => (
         <div key={release.version} className='release-div'>
           <h2>

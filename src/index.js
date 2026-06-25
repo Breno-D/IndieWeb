@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "@fontsource/work-sans"; 
+import "@fontsource-variable/fraunces/index.css";
+
 // import '../index.css';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
