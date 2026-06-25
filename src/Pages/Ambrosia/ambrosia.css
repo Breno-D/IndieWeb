@@ -1,0 +1,119 @@
+.mainContainerAmbrosia
+{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+.img-headerAmbrosia
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+}
+
+.mainContentAmbrosia
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: #8B6BC4;
+}
+
+
+.boxAmbrosia
+{
+    width: 75%;
+    background-color: #5C3E94;
+    color: black;
+    padding: 15px;
+    font-weight: bold;
+    border: 2px solid #211832;
+  /* Stacked sharp offsets create a solid 3D depth */
+  box-shadow: 
+    1px 1px 0px #211832,
+    2px 2px 0px #211832,
+    3px 3px 0px #211832,
+    4px 4px 0px #211832,
+    5px 5px 0px #211832,
+    6px 6px 0px #211832;
+}
+
+
+.mainContent-boxAmbrosia
+{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.middlecontentambrosia
+{
+    background-color: #8B6BC4;
+    height: 100%;
+    width: 100%;
+    margin:20px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.productbox
+{
+    border: 2px solid white;
+    flex: 0 0 48%;
+    height: 200px;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productimg
+{
+    margin: 2px;
+    flex: 0 0 40%;
+    width: 100%;
+}
+
+.productdesc
+{
+    flex: 0 0 59%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.productdesc h3
+{
+    text-align: center;
+    margin: 0;
+}
+
+.productdesc p
+{
+    font-size: 13px;
+    margin: 0;
+}
+
+.productfinalize
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 30%
+}
+
+.buyimage
+{
+    width: 40px;
+    height: 40px;
+}

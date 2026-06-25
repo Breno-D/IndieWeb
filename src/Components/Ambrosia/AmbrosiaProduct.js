@@ -1,0 +1,17 @@
+import wppimage from "../../Pages/Ambrosia/whatsapp.png"
+
+export default function AmbrosiaProduct({ product }) {
+  return (
+    <div className='productbox'>
+      <img className='productimg' src={product.cover}></img>
+      <div className='productdesc'>
+        <h3>{product.title}</h3>
+        <p>{product.desc}</p>
+        <div className='productfinalize'>
+          <p>{product.value}</p>
+          <a href="https://wa.me/+5535988129145" target="blank"><img className='buyimage' src={wppimage}></img></a>
+        </div>
+      </div>
+    </div>
+  );
+}

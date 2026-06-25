@@ -18,7 +18,7 @@ function GameDevTutorial() {
             <Leftbar></Leftbar>
             <div className="middle-content">
               <div className='box mainContent-box'>
-                <p>Depois de muito ponderar isso sera uma página onde colocarei dicas de como fazer uma gamejam</p> 
+                <p>Depois de muito ponderar isso sera uma página onde colocarei dicas de como fazer jorjos</p> 
               </div>
             </div>
             <RightBar></RightBar>

@@ -16,7 +16,7 @@ function Leftbar() {
         <div className="box">
             <h3>Botão do Site</h3>
             <div className="site-button-container"><a href="MYWEBSITE"><img src={mybutton} alt="brenordoria button" /></a>
-                <textarea defaultValue={'<a href="MYWEBSITE"><img src="MYBUTTONWEBSITE" alt="brenordoria button" loading="lazy" /><a/>'}>
+                <textarea defaultValue={'<a href="MYWEBSITE"><img src="mybutton.gif" alt="brenordoria button" loading="lazy" /><a/>'}>
                 </textarea>
             </div>
             <h6>Não fazer Hotlink</h6>

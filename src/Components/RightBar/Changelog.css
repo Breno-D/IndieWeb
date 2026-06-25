@@ -13,6 +13,7 @@
 .changelog-box h4
 {
     /* margin-top: 200px; */
+    color: #130D1E;
 }
 
 .release-div
@@ -25,6 +26,5 @@
 .release-date
 {
     font-size: 0.9rem;
-    color: black;
     margin-left: 10px;
 }
