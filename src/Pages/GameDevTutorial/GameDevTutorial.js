@@ -10,7 +10,11 @@ import unityinstallhub from './Images/unityhubinstall.png';
 import installvs from './Images/vscodeinstall.png';
 import unityhubstart from './Images/unityhubstart.png';
 
+
 function GameDevTutorial() {
+  const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+};
   return (
     <div className="mainContainer">
       <Header></Header>
@@ -26,11 +30,11 @@ function GameDevTutorial() {
               </div>
               <div className='box mainContent-box gamedevbox'>
                 <h3>Sumário</h3>
-                <a href='#primeirospassos'><h2>Primeiros Passos</h2></a>
-                <a href='#ferramentas'><p className='gamedevSubtitle'>--Escolhendo suas Ferramentas</p></a>
-                <a href='#ferramentascomplementares'><p className='gamedevSubtitle'>--Ferramentas Complementares</p></a>
-                <a href='#instalando'><p className='gamedevSubtitle'>--Instalando Ferramentas Necessárias</p></a>
-                <a href='#POO'><h2>Programação Orientada a Objetos</h2></a>
+                <span onClick={() => scrollToSection('primeirospassos')}><h2>Primeiros Passos</h2></span>
+                <span onClick={() => scrollToSection('ferramentas')} ><p className='gamedevSubtitle'>--Escolhendo suas Ferramentas</p></span>
+                <span onClick={() => scrollToSection('ferramentascomplementares')}><p className='gamedevSubtitle'>--Ferramentas Complementares</p></span>
+                <span onClick={() => scrollToSection('instalando')}><p className='gamedevSubtitle'>--Instalando Ferramentas Necessárias</p></span>
+                <span onClick={() => scrollToSection('POO')}><h2>Programação Orientada a Objetos</h2></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>

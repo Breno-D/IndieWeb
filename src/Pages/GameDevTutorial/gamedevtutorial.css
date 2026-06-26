@@ -23,3 +23,10 @@
     max-width: 90%;
     align-self: center;
 }
+
+.gamedevbox span
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #F25912;
+}
