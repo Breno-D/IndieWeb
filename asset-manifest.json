@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IndieWeb/static/css/main.4b7c5434.css",
-    "main.js": "/IndieWeb/static/js/main.67f8feaa.js",
+    "main.js": "/IndieWeb/static/js/main.f32a4fc0.js",
     "static/js/453.82c6f58b.chunk.js": "/IndieWeb/static/js/453.82c6f58b.chunk.js",
     "static/media/postgj-004.png": "/IndieWeb/static/media/postgj-004.09bab518136a88e1850f.png",
     "static/media/headerBg.jpg": "/IndieWeb/static/media/headerBg.096e2452e09f9e48c93c.jpg",
@@ -33,11 +33,11 @@
     "static/media/work-sans-vietnamese-400-normal.woff2": "/IndieWeb/static/media/work-sans-vietnamese-400-normal.975ae1047e15761bc2a7.woff2",
     "index.html": "/IndieWeb/index.html",
     "main.4b7c5434.css.map": "/IndieWeb/static/css/main.4b7c5434.css.map",
-    "main.67f8feaa.js.map": "/IndieWeb/static/js/main.67f8feaa.js.map",
+    "main.f32a4fc0.js.map": "/IndieWeb/static/js/main.f32a4fc0.js.map",
     "453.82c6f58b.chunk.js.map": "/IndieWeb/static/js/453.82c6f58b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b7c5434.css",
-    "static/js/main.67f8feaa.js"
+    "static/js/main.f32a4fc0.js"
   ]
 }
