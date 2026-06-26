@@ -1,4 +1,4 @@
-.gamedevbox h4, h5
+.gamedevSubtitle, .gamedevbox h2, .gamedevbox h4
 {
     margin: 0px;
 }
@@ -6,4 +6,20 @@
 .link
 {
     scroll-margin-top: 60px;
+}
+
+.gamedevbox p
+{
+    font-size: 14px;
+}
+
+.gamedevTitle
+{
+    align-self: baseline;
+}
+
+.tutorialimage
+{
+    max-width: 90%;
+    align-self: center;
 }
