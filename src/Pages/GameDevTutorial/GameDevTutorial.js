@@ -1,12 +1,9 @@
 import '../index.css';
+import './gamedevtutorial.css';
 import Header from '../../Components/Header/Header.js'
 import Navbar from '../../Components/Header/Navbar.js';
 import Leftbar from '../../Components/LeftBar/Leftbar.js';
 import RightBar from '../../Components/RightBar/RightBar.js';
-import BlogPreview from "../../Components/Blog/BlogPreview.js";
-import GameJamPreview from "../../Components/GameJam/GameJamPreview.js";
-import LatestGameRelease from "../../Components/GameJam/LatestGameRelease.js";
-
 import Footer from '../../Components/Footer/Footer.js';
 
 function GameDevTutorial() {
@@ -17,9 +14,12 @@ function GameDevTutorial() {
         <div className="mainContent">
             <Leftbar></Leftbar>
             <div className="middle-content">
-              <div className='box mainContent-box'>
-                <p>Depois de muito ponderar isso sera uma página onde colocarei dicas de como fazer jorjos</p>
-                <p>Ainda em produção!</p> 
+              <div className='box mainContent-box gamedevbox'>
+                <h3>Sumário</h3>
+                <a href='#testelink'><h4>Primeira Teste</h4></a>
+                <a href='#especifico'><h5>--Sublink</h5></a>
+              </div>
+              <div className='box mainContent-box gamedevbox link' id='testelink'>
               </div>
             </div>
             <RightBar></RightBar>
