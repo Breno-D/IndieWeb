@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import "@fontsource/work-sans"; 
 import "@fontsource-variable/fraunces/index.css";
 
@@ -13,10 +13,11 @@ import Jogos from './Pages/Jogos/Jogos';
 import GameDevTutorial from './Pages/GameDevTutorial/GameDevTutorial';
 import reportWebVitals from './reportWebVitals';
 
+// npm run deploy to update githubpages
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-     <BrowserRouter>
+     <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -27,7 +28,7 @@ root.render(
         <Route path="/jogos/:page" element={<Jogos />} />
         <Route path="/game-dev" element={<GameDevTutorial />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 reportWebVitals();
