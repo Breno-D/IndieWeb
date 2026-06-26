@@ -189,7 +189,7 @@ function FactOfTheDay ()
   "06-23": "é o Dia Internacional das Mulheres na Engenharia",
   "06-24": "finalmente temos Festas Juninas, pula fogueira iaia",
   "06-25": "é o Dia Mundial do Vitiligo e também o dia de morte do Michael Jackson (2009)",
-  "06-26": "é o Dia Internacional Contra o Abuso e Tráfico Ilícito de Drogas",
+  "06-26": "é o Dia Nacional do Diabetes",
   "06-27": "é o Dia Nacional do Volei!",
   "06-28": "é o Dia Internacional do Orgulho LGBTQIAPN+",
   "06-29": "a data da conquista da primeira Copa do Mundo pela Seleção Brasileira em 1958",

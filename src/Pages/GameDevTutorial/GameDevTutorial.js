@@ -8,6 +8,7 @@ import Footer from '../../Components/Footer/Footer.js';
 
 import unityinstallhub from './Images/unityhubinstall.png';
 import installvs from './Images/vscodeinstall.png';
+import unityhubstart from './Images/unityhubstart.png';
 
 function GameDevTutorial() {
   return (
@@ -29,6 +30,7 @@ function GameDevTutorial() {
                 <a href='#ferramentas'><p className='gamedevSubtitle'>--Escolhendo suas Ferramentas</p></a>
                 <a href='#ferramentascomplementares'><p className='gamedevSubtitle'>--Ferramentas Complementares</p></a>
                 <a href='#instalando'><p className='gamedevSubtitle'>--Instalando Ferramentas Necessárias</p></a>
+                <a href='#POO'><h2>Programação Orientada a Objetos</h2></a>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -57,6 +59,15 @@ function GameDevTutorial() {
                 <p>Para linux basta seguir as instruções passo a passo colando os comandos em destaque no terminal</p>
                 <p>Para baixar o VSCode basta seguir <a href='https://code.visualstudio.com/download?_exp_download=fb315fc982'>Este</a> link e escolher o seu sistema operacional como mostra a imagem abaixo:</p>
                 <img className='tutorialimage' src={installvs}></img>
+                <p></p>
+                <p>Após abrir o unity hub ele pedirá para que você faça login na sua conta unity, após isso ele exibirá a página inicial onde ele já vai mostrar uma sugestão de instalar a versão mais nova da unity no seu computador!</p>
+                <img className='tutorialimage' src={unityhubstart}></img>
+                <p>Mas, caso você tenha um computador mais velhinho - como o meu - eu aconselho a ir em instalações, então ele mostrará que você não tem nenhuma instalação feita e lá você consegue baixar algumas versões passadas (eu recomendo SEMPRE baixar versões com 'LTS' no nome, que são as versões Long Term Support, ou seja, as manutenções e atualizações dessa versão continuam acontecendo por um boom tempo), ou até mesmo versões muito anteriores (no momento ele só da de sugestão a versão 6.0 da unity, mas podemos ir em Archive e achar versões anteriores pelo site)</p>
+                <p>Ao terminar de instalar, basta ir em projetos e criar um novo projeto, começe um projeto 2D e espere até que ele seja criado</p>
+              </div>
+
+              <div className='box mainContent-box gamedevbox link' id='POO'>
+                <h3>Programação Orientada a Objetos</h3>
               </div>
             </div>
             <RightBar></RightBar>
