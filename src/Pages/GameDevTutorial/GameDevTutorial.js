@@ -104,8 +104,20 @@ function GameDevTutorial() {
                 <p>Não! é aí que entra o polimorfismo! Como ambas estas classes herdam da mesma classe mãe, podemos tratar qualquer inimigo como sendo do tipo Inimigo e chamar TomarDano(), independente de ser um InimigoPatrulha ou InimigoPulo.</p>
                 <p>Podemos também na classe mãe marcamos um método com <i>virtual</i>, indicando que as filhas podem reescrever esse comportamento. Nas classes filhas usamos <i>override</i> para personalizar esse método, e mesmo assim, o código externo só precisa conhecer a classe Inimigo para acessar o método.</p>
                 <h3 className='gamedevTitle link' id='interfaces'>Interfaces</h3>
-                <p></p>
+                <p>As interfaces são outro conceito importante para POO, na Unity você vai encontrar interfaces desde cedo como IEnumerator para coroutines. Por isso vale entender o conceito antes de seguir em frente.</p>
+                <p>Interfaces são como um "contrato" de que uma Classe vai implementar certos métodos, é quase que uma herança onde todos os métodos devem ser <i>override</i>; a grande diferença é que uma Classe pode implementar diversas interfaces, mas só pode herdar de uma classe mãe.</p>
+                <p>Uma interface não implementa nenhum método em si, ela é só uma 'lista de métodos/comportamentos' que, se sua classe implementa essa Interface ela deve ter todos eles dentro dela.</p>
+                <p>Dentro de jogos podemos pensar em algo como criar uma Interface IDestrutivel, que exige os métodos LevarDano(int dano) e Destruir() sejam criados nas Classes que implementarem esta interface.<br></br>Ao criarmos Classes de objetos no cenário que podem ser destruidos e implementarmos essa interface seremos obrigados a criar os métodos necessários para que o objeto seja destruído</p>
+                <p>Lembra que uma classe só pode herdar de uma mãe? Uma parede e um inimigo não compartilham herança, mas ambos podem ser destruídos. Com a interface IDestrutivel, os dois implementam o contrato sem precisar de uma classe mãe em comum.</p>
                 <h3 className='gamedevTitle link' id='composicao'>Composição</h3>
+                <p>A Composição é fundamental no desenvolvimento de jogos! Com a Composição criamos uma relação de "Tem um", é uma técnica em que uma Classe é construida utilizando instâncias de outras classes, o que permite reutilização de código e criar estruturas mais complexas com maior flexibilidade.</p>
+                <p>Logo iremos para a unity e você vai perceber que todo Objeto que criamos na cena é um resultado de uma Composição, visto que um GameObject na unity tem uma posição, tem um gráfico, etc</p>
+                <p>De forma prática, usando nossos inimigos como exemplo, nós criaremos os scripts de InimigoPatrulha e InimigoPulo e, nos inimigos da cena um Goomba terá um Objeto da classe InimigoPatrulha em si, tera uma posição no mundo(Transform), terá um gráfico à ser renderizado(SpriteRenderer), terá um script responsável pela animação, etc, etc</p>
+                <p>Dessa maneira, caso você precise alterar partes do comportamento do inimigo, podemos alterar apenas seu componente, sem precisar reescrever toda a estrutura do Inimigo</p>
+                <p>Uma regra prática: prefira Composição quando a relação é "tem um", e herança quando a relação é "é um".<br></br> 
+                Um Goomba É UM Inimigo: herança faz sentido.<br></br>
+                Mas um Goomba TEM UM gráfico, TEM UMA posição no mundo: composição faz sentido</p>
+                <p></p>
               </div>
             </div>
             <RightBar></RightBar>
