@@ -117,7 +117,6 @@ function GameDevTutorial() {
                 <p>Uma regra prática: prefira Composição quando a relação é "tem um", e herança quando a relação é "é um".<br></br> 
                 Um Goomba É UM Inimigo: herança faz sentido.<br></br>
                 Mas um Goomba TEM UM gráfico, TEM UMA posição no mundo: composição faz sentido</p>
-                <p></p>
               </div>
             </div>
             <RightBar></RightBar>
