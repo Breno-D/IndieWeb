@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.f3283bf0.css",
-    "main.js": "./static/js/main.4c56d9d0.js",
+    "main.js": "./static/js/main.0cbce793.js",
     "static/js/453.82c6f58b.chunk.js": "./static/js/453.82c6f58b.chunk.js",
     "static/media/postgj-004.png": "./static/media/postgj-004.09bab518136a88e1850f.png",
     "static/media/headerBg.jpg": "./static/media/headerBg.096e2452e09f9e48c93c.jpg",
@@ -11,6 +11,7 @@
     "static/media/postgj-002.png": "./static/media/postgj-002.b271624dbd3c52b1c966.png",
     "static/media/unityhubinstall.png": "./static/media/unityhubinstall.64d5edf5d46705bcbb09.png",
     "static/media/vscodeinstall.png": "./static/media/vscodeinstall.9a5b58fc67dde3ce1670.png",
+    "static/media/heranca.png": "./static/media/heranca.724cd3d472ef1cbe566c.png",
     "static/media/gamehighlight.jpg": "./static/media/gamehighlight.a02e620733b2daa7c5a3.jpg",
     "static/media/latest.jpg": "./static/media/latest.90c0d87d1d5583514de7.jpg",
     "static/media/postgj-005.png": "./static/media/postgj-005.f34d01d9a30f21eaccce.png",
@@ -33,11 +34,11 @@
     "static/media/work-sans-vietnamese-400-normal.woff2": "./static/media/work-sans-vietnamese-400-normal.975ae1047e15761bc2a7.woff2",
     "index.html": "./index.html",
     "main.f3283bf0.css.map": "./static/css/main.f3283bf0.css.map",
-    "main.4c56d9d0.js.map": "./static/js/main.4c56d9d0.js.map",
+    "main.0cbce793.js.map": "./static/js/main.0cbce793.js.map",
     "453.82c6f58b.chunk.js.map": "./static/js/453.82c6f58b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f3283bf0.css",
-    "static/js/main.4c56d9d0.js"
+    "static/js/main.0cbce793.js"
   ]
 }
