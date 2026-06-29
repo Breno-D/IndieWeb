@@ -9,6 +9,8 @@ import Footer from '../../Components/Footer/Footer.js';
 import unityinstallhub from './Images/unityhubinstall.png';
 import installvs from './Images/vscodeinstall.png';
 import unityhubstart from './Images/unityhubstart.png';
+import classandobject from './Images/classandobject.jpg';
+import heranca from './Images/heranca.png';
 
 
 function GameDevTutorial() {
@@ -35,6 +37,11 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('ferramentascomplementares')}><p className='gamedevSubtitle'>--Ferramentas Complementares</p></span>
                 <span onClick={() => scrollToSection('instalando')}><p className='gamedevSubtitle'>--Instalando Ferramentas Necessárias</p></span>
                 <span onClick={() => scrollToSection('POO')}><h2>Programação Orientada a Objetos</h2></span>
+                <span onClick={() => scrollToSection('whatispoo')}><p className='gamedevSubtitle'>--O que é Programação Orientada a Objetos</p></span>
+                <span onClick={() => scrollToSection('classandobject')}><p className='gamedevSubtitle'>--Classes e Objetos</p></span>
+                <span onClick={() => scrollToSection('heranca')}><p className='gamedevSubtitle'>--Herança</p></span>
+                <span onClick={() => scrollToSection('interfaces')}><p className='gamedevSubtitle'>--Interfaces</p></span>
+                <span onClick={() => scrollToSection('composicao')}><p className='gamedevSubtitle'>--Composição</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -72,6 +79,33 @@ function GameDevTutorial() {
 
               <div className='box mainContent-box gamedevbox link' id='POO'>
                 <h3>Programação Orientada a Objetos</h3>
+                <h3 className='gamedevTitle link' id='whatispoo'>O Que é Programação Orientada a Objetos</h3>
+                <p>Como isso é uma introdução básica que visa ser proveitosa até mesmo para quem é completo iniciante, vamos dar apenas uma descrição geral sobre o que é a Programação Orientada a Objetos:</p>
+                <p>Quando você programa um jogo você precisa representar coisas do mundo real no código (um personagem, uma arma, um inimigo, etc). A Programação Orientada a Objetos(POO) é a forma que faremos isso!</p>
+                <p>A POO é um paradigma que se baseia em estruturar o software a partir de Classes[moldes] e Objetos[instâncias desses moldes], simulando coisas do mundo real com suas próprias características[atributos] e comportamentos [métodos].</p>
+                <p>Pense em um Inimigo no seu jogo. Ele tem características: vida, dano, etc. E tem comportamentos: andar, atacar, morrer, etc. Na POO, você cria uma Classe que define tudo isso, e cada inimigo que aparece na tela é um Objeto criado a partir dessa classe.</p>
+                <h3 className='gamedevTitle link' id='classandobject'>Classes e Objetos</h3>
+                <p>Como dissemos anteriormente em orientação a objetos nós dividimos o nosso código em classes e objetos. De forma geral classes são a "forma" com a qual vamos criar nossos objetos; Pensando em uma linguagem de jogos (mario, por exemplo) temos que uma classe seria "Inimigos", onde a gente teria atributos(informações dos inimigos, como vida, velocidade) e ações(andar, pular, etc), ja um objeto de inimigo seria um Goomba onde a gente definiria a vida como sendo 1, a velocidade como X e utilizariamos apenas a ação de andar; ou até mesmo o Bowser onde teriamos uma vida maior e talvez até ações a mais que um inimigo teria</p>
+                <img className='tutorialimage' src={classandobject}></img>
+                <p>Então temos que: Classes são a fabrica de carros; nela criamos atributos e funções que vão definir os nossos objetos. Então quando precisamos criar um objeto (um carro) nós dizemos para a nossa fabrica como queremos que esse objeto seja</p>
+                <p>Já os Objetos são instancias dessas classes, depois de definirmos modelo, nome, velocidade, cavalos etc do nosso carro, a nossa fabrica nos dá um carro pronto, esse seria o Objeto da classe Carro que criamos</p>
+                <p>Mas, voltando para jogos, se qualquer parte do código pode alterar a vida do Goomba diretamente, isso pode causar bugs difíceis de rastrear. É aí que entra o encapsulamento </p>
+                <p>Dentro das nossas classes é importante que nossos atributos e métodos sejam bem encapsulados, o que quer dizer que eles são protegidos de alterações externas. Nós criamos atributos e metodos privados dentro da Classe e criamos funções publicas específicas para que códigos externos possam alterar os atributos do nosso objeto somente onde nós permitirmos</p>
+                <p>então se a nossa Classe Inimigos (e por consequenia o nosso Inimigo Goomba) tem o atributo <br></br><br></br><i>private int vida</i><br></br><br></br>que não pode ser alterado diretamente por códigos externos, nós também criaremos uma função <br></br><br></br><i>public void TomarDano(int dano)</i><br></br><br></br> que recebe um valor de dano e subtrai da vida dos nossos inimigos, e que pode ser chamado de forma externa ao Inimigo sem alterar seus atributos diretamente</p>
+                <p>Assim, se a vida do Goomba chegar a um valor inválido ou se algum outro bug acontecer, sabemos exatamente onde procurar: só o TomarDano pode alterar ela</p>
+                <h3 className='gamedevTitle link' id='heranca'>Herança</h3>
+                <img className='tutorialimage' src={heranca}></img>
+                <p>A Herança é um dos pilares da POO, ela permite que uma Classe seja filha de outar Classe, isso quer dizer que: a Classe filha vai herdar todos os atributos e métodos da sua classe mãe, evitando reescrita de código.</p>
+                <p>Vamos continuar com o nosso exemplo de jogos, vamos dizer que no nosso Mário temos alguns tipos diferentes de inimigos distintos, o Goomba apenas anda e o inimigo chamado Irmão martelo não anda, mas ele pula e joga martelos de longe.<br></br>Ambos são inimigos, mas não compartilham todos os seus métodos(ações), logo devemos usar herança para resolver isso!</p>
+                <p>Então nos temos a Classe Inimigo que possui os nossos atributos como vida, velocidade e metodos como TomarDano, tudo isso será herdado pelas nossas novas classes Filhas.</p>
+                <p>Criamos então a Classe InimigoPatrulha e InimigoPulo que herdam da classe Inimigo todos os seus atributos e métodos e nestas classes especificas nós criaremos os métodos de seus comportamentos, então em InimigoPatrulha criamos o metodo Patrulhar e em InimigoPulo criamos os metodos de Pular e JogarMartelo.</p>
+                <p>Então nossos Objetos são criados à partir das classes InimigoPatrulha e InimigoPulo.</p>
+                <p>Mas então temos um problema, quando nosso personagem der dano em um inimigo, devemos testar chamar o método TomarDano em todos as Classes herdadas diferentes de inimigos até acharmos a qual o nosso inimigo atingido pertence?</p>
+                <p>Não! é aí que entra o polimorfismo! Como ambas estas classes herdam da mesma classe mãe, podemos tratar qualquer inimigo como sendo do tipo Inimigo e chamar TomarDano(), independente de ser um InimigoPatrulha ou InimigoPulo.</p>
+                <p>Podemos também na classe mãe marcamos um método com <i>virtual</i>, indicando que as filhas podem reescrever esse comportamento. Nas classes filhas usamos <i>override</i> para personalizar esse método, e mesmo assim, o código externo só precisa conhecer a classe Inimigo para acessar o método.</p>
+                <h3 className='gamedevTitle link' id='interfaces'>Interfaces</h3>
+                <p></p>
+                <h3 className='gamedevTitle link' id='composicao'>Composição</h3>
               </div>
             </div>
             <RightBar></RightBar>
