@@ -11,6 +11,7 @@ import installvs from './Images/vscodeinstall.png';
 import unityhubstart from './Images/unityhubstart.png';
 import classandobject from './Images/classandobject.jpg';
 import heranca from './Images/heranca.png';
+import composition from './Images/composition.png';
 
 
 function GameDevTutorial() {
@@ -112,6 +113,7 @@ function GameDevTutorial() {
                 <h3 className='gamedevTitle link' id='composicao'>Composição</h3>
                 <p>A Composição é fundamental no desenvolvimento de jogos! Com a Composição criamos uma relação de "Tem um", é uma técnica em que uma Classe é construida utilizando instâncias de outras classes, o que permite reutilização de código e criar estruturas mais complexas com maior flexibilidade.</p>
                 <p>Logo iremos para a unity e você vai perceber que todo Objeto que criamos na cena é um resultado de uma Composição, visto que um GameObject na unity tem uma posição, tem um gráfico, etc</p>
+                <img className='tutorialimage' src={composition}></img>
                 <p>De forma prática, usando nossos inimigos como exemplo, nós criaremos os scripts de InimigoPatrulha e InimigoPulo e, nos inimigos da cena um Goomba terá um Objeto da classe InimigoPatrulha em si, tera uma posição no mundo(Transform), terá um gráfico à ser renderizado(SpriteRenderer), terá um script responsável pela animação, etc, etc</p>
                 <p>Dessa maneira, caso você precise alterar partes do comportamento do inimigo, podemos alterar apenas seu componente, sem precisar reescrever toda a estrutura do Inimigo</p>
                 <p>Uma regra prática: prefira Composição quando a relação é "tem um", e herança quando a relação é "é um".<br></br> 
