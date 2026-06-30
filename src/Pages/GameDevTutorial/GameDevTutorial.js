@@ -43,6 +43,8 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('heranca')}><p className='gamedevSubtitle'>--Herança</p></span>
                 <span onClick={() => scrollToSection('interfaces')}><p className='gamedevSubtitle'>--Interfaces</p></span>
                 <span onClick={() => scrollToSection('composicao')}><p className='gamedevSubtitle'>--Composição</p></span>
+                <span onClick={() => scrollToSection('startingunity')}><h2>Iniciando na Unity</h2></span>
+                <span onClick={() => scrollToSection('unitygeneral')}><p className='gamedevSubtitle'>--Visão Geral</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -119,6 +121,11 @@ function GameDevTutorial() {
                 <p>Uma regra prática: prefira Composição quando a relação é "tem um", e herança quando a relação é "é um".<br></br> 
                 Um Goomba É UM Inimigo: herança faz sentido.<br></br>
                 Mas um Goomba TEM UM gráfico, TEM UMA posição no mundo: composição faz sentido</p>
+              </div>
+              <div className='box mainContent-box gamedevbox link' id='startingunity'>
+                <h3>Iniciando na Unity</h3>
+                <h3 className='gamedevTitle link' id='unitygeneral'>Visão Geral</h3>
+                <p>Inicio da visão da unity no geral</p>
               </div>
             </div>
             <RightBar></RightBar>
