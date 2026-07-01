@@ -175,15 +175,23 @@ function GameDevTutorial() {
                 <br></br>Isso faz com que seus scripts já tenha algumas funções e atributos que podem ser utilizados no desenvolvimento do seu jogo, e é isto que iremos explorar nesse tópico!</p>
                 <p>
                   <b>Awake</b>
-                  <br></br>Awake é chamado uma vez quando a Unity carrega uma instancia do componente do script, ou seja, sempre a primeira vez que esse script fica ativo (seja ao carregar a cena ou ao ativar o script). É a primeira função que é rodada de um script.
+                  <br></br>Awake é chamado uma vez quando a Unity carrega uma instancia do componente do script, ou seja, é chamado uma vez quando a Unity carrega o objeto na cena pela primeira vez (seja ao carregar a cena ou ao ativar o script). É a primeira função que é rodada de um script.
+                  <br></br>Awake roda apenas uma vez durante toda a vida do objeto, mesmo que ele seja desativado e reativado posteriormente
+                </p>
+                <p>
                   <b>Start</b>
                   <br></br>Start é uma função chamada uma vez no frame em que o script é ativado e sempre roda depois da função Awake (A Função Start de um script só roda depois de TODOS os Objetos na cena terem rodado a sua função Awake).
+                </p>
+                <p>
                   <b>Update</b>
                   <br></br>Update é uma função chamada a cada frame e começa a rodar depois da função Start().
+                </p>
+                <p>
                   <b>OnEnable/OnDisable</b>
                   <br></br>Funções que rodam quando um Objeto fica disponivel e ativo ou indisponivel e inativo; A função OnEnable roda ENTRE a função de Awake e a função de Start
+                  <br></br>Úteis quando você desativa e reativa objetos com frequência, como um pool de inimigos. OnEnable pode voltar o estado do objeto ao inicial, e OnDisable pode pausar comportamentos desnecessários
                 </p>
-                <p>Para informações extras: Tópico sobre inicializações</p>
+                <p>Awake -> OnEnable -> Start -> Update (a cada frame)</p>
                 <h3 className='gamedevTitle link' id='unityfirstscript'>Criando Nosso Primeiro Script</h3>
                 <h3 className='gamedevTitle link' id='unityideastoscript'>Traduzindo Ideias em Scripts</h3>
                 <p></p>
