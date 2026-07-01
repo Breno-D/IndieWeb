@@ -136,11 +136,11 @@ function GameDevTutorial() {
                   <li>Abaixo temos a parte de projeto e console, que é o lugar onde vemos todos os arquivos do nosso projeto (e onde criamos nossos scripts, clicando com o botão direito->Criar->C# Script) e o Console onde verificamos erros e logs</li>
                   <li>À direita temos o inspetor, que é o que mostra os detalhes do objeto que temos selecionados</li>
                 </ul></p>
-                <img src={heranca}></img>
+                <img className='tutorialimage'  src={heranca}></img>
                 <p>E este é o layout que eu uso normalmente:<br></br>Hierarquia e Inspetor à direita, Projeto e Console abertos ao mesmo tempo abaixo</p>
-                <img src={heranca}></img>
+                <img className='tutorialimage' src={heranca}></img>
                 <p>Após selecionar um objeto na hierarquia conseguimos ver no inspetor os seus detalhes, ali podemos ver que um objeto é composto por vários componentes, como transform, SpriteRenderer etc que são instancias de scripts da unity, ou seja, são objetos da Classe Transform, SpriteRenderer etc que compoẽ o nosso GameObject, ou podemos dizer que o nosso GameObject <b>tem um</b> Transform e <b>tem um</b> SpriteRenderer.</p>
-                <img src={heranca}></img>
+                <img className='tutorialimage' src={heranca}></img>
                 <p>Nos próximos tópicos vamos explorar esses componentes com um pouco mais de profundidade, entendendo o que cada um faz e como usá-los nos nossos scripts.</p>
                 <h3 className='gamedevTitle link' id='unitycomponents'>Componentes da Unity</h3>
                 <p>A Unity nos oferece uma infinidade de Componentes que são essenciais na nossa jornada de GameDev e que compoẽ grande parte do funcionamento do nosso jogo, desde simulações de física até organização de itens em um menu.
@@ -193,8 +193,8 @@ function GameDevTutorial() {
                 </p>
                 <p>Awake -> OnEnable -> Start -> Update (a cada frame)</p>
                 <h3 className='gamedevTitle link' id='unityfirstscript'>Criando Nosso Primeiro Script</h3>
-                <h3 className='gamedevTitle link' id='unityideastoscript'>Traduzindo Ideias em Scripts</h3>
                 <p></p>
+                <h3 className='gamedevTitle link' id='unityideastoscript'>Traduzindo Ideias em Scripts</h3>
               </div>
             </div>
             <RightBar></RightBar>
