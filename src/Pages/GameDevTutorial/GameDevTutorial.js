@@ -45,6 +45,10 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('composicao')}><p className='gamedevSubtitle'>--Composição</p></span>
                 <span onClick={() => scrollToSection('startingunity')}><h2>Iniciando na Unity</h2></span>
                 <span onClick={() => scrollToSection('unitygeneral')}><p className='gamedevSubtitle'>--Visão Geral</p></span>
+                <span onClick={() => scrollToSection('unitycomponents')}><p className='gamedevSubtitle'>--Componentes da Unity</p></span>
+                <span onClick={() => scrollToSection('monobehaviourbasics')}><p className='gamedevSubtitle'>--Funções Básicas de um Monobehaviour</p></span>
+                <span onClick={() => scrollToSection('unityfirstscript')}><p className='gamedevSubtitle'>--Criando Nosso Primeiro Script</p></span>
+                <span onClick={() => scrollToSection('unityideastoscript')}><p className='gamedevSubtitle'>--Traduzindo Ideias em Scripts</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -125,7 +129,57 @@ function GameDevTutorial() {
               <div className='box mainContent-box gamedevbox link' id='startingunity'>
                 <h3>Iniciando na Unity</h3>
                 <h3 className='gamedevTitle link' id='unitygeneral'>Visão Geral</h3>
-                <p>Inicio da visão da unity no geral</p>
+                <p>Esta é a visão padrão da Unity assim que baixamos uma nova versão, apesar de que a gente consegue (e deve) mudar esse layout para facilitar a nossa vida:<br></br>
+                <ul>
+                  <li>À esquerda temos a hierarquia, que é onde ficam listado todos os objetos da nossa cena</li>  
+                  <li>Ao centro temos a Scene View, onde montamos nossa cena arrastando objetos, e a Game View, que mostra exatamente o que o jogador vai ver quando o jogo rodar</li>
+                  <li>Abaixo temos a parte de projeto e console, que é o lugar onde vemos todos os arquivos do nosso projeto (e onde criamos nossos scripts, clicando com o botão direito->Criar->C# Script) e o Console onde verificamos erros e logs</li>
+                  <li>À direita temos o inspetor, que é o que mostra os detalhes do objeto que temos selecionados</li>
+                </ul></p>
+                <img src={heranca}></img>
+                <p>E este é o layout que eu uso normalmente:<br></br>Hierarquia e Inspetor à direita, Projeto e Console abertos ao mesmo tempo abaixo</p>
+                <img src={heranca}></img>
+                <p>Após selecionar um objeto na hierarquia conseguimos ver no inspetor os seus detalhes, ali podemos ver que um objeto é composto por vários componentes, como transform, SpriteRenderer etc que são instancias de scripts da unity, ou seja, são objetos da Classe Transform, SpriteRenderer etc que compoẽ o nosso GameObject, ou podemos dizer que o nosso GameObject <b>tem um</b> Transform e <b>tem um</b> SpriteRenderer.</p>
+                <img src={heranca}></img>
+                <p>Nos próximos tópicos vamos explorar esses componentes com um pouco mais de profundidade, entendendo o que cada um faz e como usá-los nos nossos scripts.</p>
+                <h3 className='gamedevTitle link' id='unitycomponents'>Componentes da Unity</h3>
+                <p>A Unity nos oferece uma infinidade de Componentes que são essenciais na nossa jornada de GameDev e que compoẽ grande parte do funcionamento do nosso jogo, desde simulações de física até organização de itens em um menu.
+                  <br></br>Os GameObjets + os Componentes que a Unity nos oferece (e os Componentes que iremos criar) são a aplicação prática da composição que vimos no capítulo anterior!
+                  <br></br>Neste tópico iremos comentar sobre alguns dos principais desses componentes:
+                </p>
+                <p><b>Transform</b>
+                <br></br>O principal componente da Unity e aquele que guarda posição/rotação do seu GameObject no mundo; Mesmo quando criamos um GameObject vazio na Unity ele sempre terá pelo menos um Transform atrelado a ele!
+                <br></br>Apesar de muitos iniciantes cometerem esse erro, nós não devemos alterar as propriedades do Transform para mexer o nosso GameObject (apesar de que, para rotacionar - pelo menos em 2D - nós geralmente mexemos na rotação do objeto diretamente)
+                <br></br>Alterar o Transform diretamente ignora o sistema de física da Unity, causando comportamentos estranhos como objetos atravessando paredes ou colisões não sendo detectadas!</p>
+                <p><b>Rigidbody</b>
+                <br></br>Já que falamos sobre não alterar o Transform anteriormente para mexer o objeto, já iremos introduzir o componente responsável por simular física no nosso objeto!
+                <br></br>Quando colocamos Rigidbody2D(ou Rigidbody para jogos 3D) nós estamos dizendo para a Unity que o nosso GameObject <b>tem</b> física, e ela faz as preparações necessárias para isso (para que esse objeto se mova etc), logo se um objeto no seu jogo se move, ele DEVE ter um Rigidbody atrelado a ele!</p>
+                <p><b>Collider</b>
+                <br></br>Collider(e Collider2D) são a segunda metade da física dos objetos da Unity, se o Rigidbody faz com que seu GameObject tenha física, os Colliders fazem com que eles tenham <i>colisão</i>.
+                <br></br>Colliders vem em diferentes formas e definimos a base dessa forma ao criarmos eles e podemos editar seu tamanho(e em alguns casos seu formato) para termos o desenho que precisarmos.
+                <br></br>Além disso colliders podem ser de dois tipos, trigger ou não trigger(collider Real), isso influencia se queremos que o nosso objeto realmente bata em oturos objetos ou apenas precisamos detectar se ele passou por oturo objeto. (Ou seja, colliders triggers são usados para chamar alguam função quando seu objeto tocar em algo, pense uma bala atingindo seu inimigo; Já colliders reais servem para que objetos se toquem de verdade, pense o chão e o seu personagem)
+                </p>
+                <p><b>SpriteRenderer</b>
+                <br></br>Se estamos falando de 2D é um dos componentes visuais principais para o seu jogo, nele é onde você definirá a sprite do seu personagem, ou seja, o gráfico que será exibido na Cena</p>
+                <p><b>Animator</b>
+                <br></br>Componente responsável pela animação do seu GameObject, como ciclo de caminhada, etc.
+                <br></br>Ele gerencia quais animações tocar e quando transicionar entre elas, por exemplo, quando o personagem para de andar e começa a pular.</p>
+                <p><b>AudioSource</b>
+                <br></br>Componente responsável pela reprodução de sons dentro do seu jogo.
+                <br></br>Para funcionar, ele precisa de um AudioClip, que é o arquivo de áudio em si, atribuído a ele</p>
+                <p>Existem diversos outros Componentes e a melhor forma de descobri-los é através da <a href='https://docs.unity3d.com/Manual/index.html' target='blank'>documentação da Unity</a></p>
+                <h3 className='gamedevTitle link' id='monobehaviourbasics'>Funções Básicas de um Monobehaviour</h3>
+                <p>Este é um tópico rápido, apenas para vermos algumas funções básicas de um Monobehaviour antes de criarmos nosso primeiro script e nos assustarmos com tudo que está escrito!</p>
+                <p><b>Mas o que é um Monobehaviour?</b>
+                <br></br>Monobehaviour é uma Classe Mãe, da qual os scripts que você cria na Unity herdam dela!
+                <br></br>Isso faz com que seus scripts já tenha algumas funções e atributos que podem ser utilizados no desenvolvimento do seu jogo, e é isto que iremos explorar nesse tópico!</p>
+                <p>
+                  <b>Start</b>
+                  <br></br>Start é uma função chamada no frame em que o script é ativado
+                </p>
+                <h3 className='gamedevTitle link' id='unityfirstscript'>Criando Nosso Primeiro Script</h3>
+                <h3 className='gamedevTitle link' id='unityideastoscript'>Traduzindo Ideias em Scripts</h3>
+                <p></p>
               </div>
             </div>
             <RightBar></RightBar>
