@@ -12,7 +12,13 @@ import unityhubstart from './Images/unityhubstart.png';
 import classandobject from './Images/classandobject.jpg';
 import heranca from './Images/heranca.png';
 import composition from './Images/composition.png';
-
+import firstscript1 from './Images/firstscript1.png';
+import firstscript2 from './Images/firstscript2.png';
+import firstscript3 from './Images/firstscript3.png';
+import firstscript4 from './Images/firstscript4.png';
+import firstscript5 from './Images/firstscript5.png';
+import firstscript6 from './Images/firstscript6.png';
+import firstscript7 from './Images/firstscript7.png';
 
 function GameDevTutorial() {
   const scrollToSection = (id) => {
@@ -28,7 +34,7 @@ function GameDevTutorial() {
               <div className='box mainContent-box gamedevbox'>
                 <h3>Introdução</h3>
                 <p>Em uma das empresas de desenvolvimento de jogos que trabalhei uma das visões da empresa era fomentar o cenário de desenvolvimento de jogos do Brasil, e eu peguei um pouco dessa visão para mim!</p>
-                <p>Abaixo você vai encontrar um tutorial (que vai ser mais atualizado conforme o tempo) de como começar a sua jornada de desenvolvimento de jogos (majoritariamente para programadores, mas com dicas em geral para todos).</p>
+                <p>Abaixo você vai encontrar um tutorial (que vai ser mais atualizado conforme o tempo) de como começar a sua jornada de desenvolvimento de jogos (majoritariamente para programadores, mas com dicas em geral para todas as areas).</p>
                 <p>Na primeira seção você vai encontrar um sumário que vai te levar ao conteúdo desejado na pagina, basta clicar para pular para onde quiser caso queira pular direito para algum conteúdo ou relembrar algo lá na frente em um momento de necessidade! :D</p>
               </div>
               <div className='box mainContent-box gamedevbox'>
@@ -48,7 +54,8 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('unitycomponents')}><p className='gamedevSubtitle'>--Componentes da Unity</p></span>
                 <span onClick={() => scrollToSection('monobehaviourbasics')}><p className='gamedevSubtitle'>--Funções Básicas de um Monobehaviour</p></span>
                 <span onClick={() => scrollToSection('unityfirstscript')}><p className='gamedevSubtitle'>--Criando Nosso Primeiro Script</p></span>
-                <span onClick={() => scrollToSection('unityideastoscript')}><p className='gamedevSubtitle'>--Traduzindo Ideias em Scripts</p></span>
+                <span onClick={() => scrollToSection('traduzindoideias')}><h2>Traduzindo Ideias em Códigos</h2></span>
+                <span onClick={() => scrollToSection('')}><p className='gamedevSubtitle'>--</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -193,8 +200,63 @@ function GameDevTutorial() {
                 </p>
                 <p>Awake -> OnEnable -> Start -> Update (a cada frame)</p>
                 <h3 className='gamedevTitle link' id='unityfirstscript'>Criando Nosso Primeiro Script</h3>
-                <p></p>
-                <h3 className='gamedevTitle link' id='unityideastoscript'>Traduzindo Ideias em Scripts</h3>
+                <p>Neste tópico iremos criar o nosso primeiro script da Unity para movimentar um GameObject. Vale ressaltar que aqui você vai ouvir falar de algumas funções que não está familiar ainda, mas que, no módulo seguinte iremos abordar como encontrar essas funções e como traduzir as suas ideias em código!</p>
+                <p>Vamos começar criando um GameObject na nossa cena, basta clicar com o botão direito na hierarquia e clique em 2D Object -> Sprites ->Square
+                  <br></br>Isso irá criar em nossa cena um quadrado, que sera um GameObject que tem os componentes Transform(que define sua posição) e um SpriteRenderer(que define seu gráfico).
+                  <br></br>Por fim, como queremos criar um script para o nosso quadrado se mexer, vamos adicionar um Rigidbody2D à ele, e como será um movimento top-down, colocar 0 no valor da gravidade
+                </p>
+                <p>Já temos nosso primeiro GameObject setado na cena e podemos começar com o nosso primeiro script!
+                  <br></br>Agora clicamos com o botão direito na janela de Projeto e criamos uma pasta para os nossos Scripts e depois clicamos com o botão direito e vamos em Create -> C# Script e vamos nomea-lo PlayerMovement.
+                  <br></br>Após criar o script, arraste-o da janela de Projeto para o seu GameObject na hierarquia, ou clique em Add Component no Inspetor e busque pelo nome do script
+                  <br></br>Ao abrir o nosso script pela primeira vez nos deparamos com algumas funções que discutimos no tópico anterior:
+                </p>
+                <img className='tutorialimage' src={firstscript1} alt='imagem mostrando script inicial ao se criar uma classe da Unity'></img>
+                <p>Agora o nosso script irá mover o nosso personagem, mas como fazemos isso?
+                  <br></br>Vamos utilizar o Componente responsável pela simulação de física do objeto que adicionamos anteriormente, o Rigidbody2D.
+                  <br></br>Primeiro criamos uma variavel do tipo 'Rigidbody2D' e damos à ela um nome, como 'myRb'.
+                </p>
+                <img className='tutorialimage' src={firstscript2} alt='imagem mostrando script da Unity com uma váriavel do tipo Rigidbody2D criada com o nome myRb'></img>
+                <p>
+                  <br></br>Depois disso precisamos que essa variável 'myRb' esteja falando do Rigidbody2D do nosso GameObject do jogador, e existem algumas maneiras para se fazer isso, uma ruinzinha, um ok e uma ideal.
+                  <ul>
+                    <li><b>A opção ruinzinha:</b>Podemos criar essa variável com o prefixo <i>'public'</i>e vamos arrastar o nosso Rigidbody2D para o campo do 'myRb' quando colocarmos o script no GameObject do jogador</li>
+                    <li><b>A opção ok:</b>Podemos criar essa variável com o prefixo <i>[SerializeField]</i>, funciona básicamente com o 'public' para definir quem é o 'myRb' mas a nossa variável permanece privada</li>
+                    <li><b>A opção ideal:</b>Para esse caso, como o Rigidbody2D E o nosso script de movimento estão Compondo o nosso GameObject, podemos pegar a referencia deste Rigidbody2D por código utilizando a função GetComponent</li>
+                  </ul>
+                </p>
+                <p>A função GetComponent é uma função dos GameObjects e retorna uma referencia de um componente do Tipo que você especificar!
+                  <br></br>Por ser uma função de GameObjects, ela pode ser rodada tanto no GameObject que seu script está atrelado quanto à outros GameObjects que você tiver a referência no script!
+                  <br></br>O nosso código então, ficaria algo assim:
+                </p>
+                <img className='tutorialimage' src={firstscript3} alt='imagem mostrando a variavel myRb e dentro da função Start a chamada myRb = GetComponent<RB2D>()'></img>
+                <p>Para movimentar o nosso Rigidbody2D existem alguns meios, todos com seus pontos positivos e negativos que serão explorados em módulos futuros; Mas de modo geral é algo mais sobre preferência.
+                  <br></br>No meu dia a dia eu utilizo Velocity, que altera a velocidade do nosso Rigidbody fazendo com que ele se mova.
+                  <br></br>O velocity pode ser alterado dessa maneira:
+                </p>
+                <img className='tutorialimage' src={firstscript4} alt='imagem mostrando myRb.velocity=new vector2(1f,0f) dentro da função update'></img>
+              <p>Com isso nosso GameObject esta se movendo para sempre para a direita!</p>
+              <p>Mas queremos controlar esse movimento e não ir para um lado desenfreado.
+                <br></br>Então iremos mover de acordo com os inputs do jogador, para fazer isso iremos usar o método antigo; Atualmente a preferencia por facilidade de atualizações e de trazer diferentes métodos de inputs para o projeto é o NewInputsystem da Unity, mas falaremos mais sobre ele em tópicos para a frente.</p>
+              <p>
+                Para fazer isso iremos, dentro do Update - ou seja, a cada frame - ouvir se o jogador apertou a tecla necessária e, se sim, o GameObject irá se mover!
+                <br></br>Para simplificar, faremos o movimento em uma direção por vez, lidar com movimento diagonal corretamente envolve conceitos que abordaremos em módulos futuros (como a utilização do NewInputSystem). 
+                <br></br>A função que é disparada quando o jogador aperta uma tecla é a Input.GetKeyDown ou Input.GetButtonDown.
+                <br></br>A grande diferença das duas é que enquanto GetKeyDown você vai passar uma referência direta de uma tecla utilizando KeyCode, o GetButtonDown você vai passar uma referência de input que pode ser configurada e alterada na Unity (algo como 'fire').
+              </p>
+              <img className='tutorialimage' src={firstscript5} alt='imagem mostrando o getkeydownD sendo checado no update para mover o player para a direita'></img>
+              <p>Assim ficaria o nosso script para esperar quando o jogador apertar para a direita para começar a se mover para a direita.</p>
+              <p>Mas você vai perceber que o seu jogador continua se movendo mesmo depois de soltar a tecla, isso é por que mudamos sua velocidade mas não voltamos ela para 0 quando o jogador parou de pressionar a tecla.
+                <br></br>Então fazemos isso após definir seus movimentos para todas as direções, utilizando um else e setando sua velocidade para (0,0)
+              </p>
+              <img className='tutorialimage' src={firstscript6} alt='imagem mostrando todos os getkeydown para cada direção e o else parando o jogador'></img>
+              <p>Com isso temos o nosso jogador se movendo pela cena e parando quando o jogador para de se mover, além de termos criado o nosso primeiro script de jogos na Unity!</p>
+              <p>Uma dica: use Debug.Log(myRb.velocity) dentro do Update para ver no Console a velocidade do objeto em tempo real, você vai usar muito isso para debugar seus scripts.</p>
+              <img className='tutorialimage' src={firstscript7} alt='imagem mostrando o debug.log após o else dos movimentos no update'></img>
+              <p>No próximo módulo vamos aprender como encontrar funções como velocity e GetComponent por conta própria, uma habilidade essencial para continuar evoluindo.</p>
+              </div>
+             <div className='box mainContent-box gamedevbox link' id='traduzindoideias'>
+                <h3>Traduzindo Ideias em Códigos</h3>
+                
               </div>
             </div>
             <RightBar></RightBar>
