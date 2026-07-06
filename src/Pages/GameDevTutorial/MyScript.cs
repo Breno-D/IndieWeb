@@ -33,5 +33,6 @@ public class MyScript : MonoBehaviour
         {
             myRb.velocity = new Vector2(0f,0f);
         }
+        Debug.Log(myRb.velocity);
     }
 }

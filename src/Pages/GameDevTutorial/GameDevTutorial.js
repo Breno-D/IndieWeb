@@ -55,7 +55,7 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('monobehaviourbasics')}><p className='gamedevSubtitle'>--Funções Básicas de um Monobehaviour</p></span>
                 <span onClick={() => scrollToSection('unityfirstscript')}><p className='gamedevSubtitle'>--Criando Nosso Primeiro Script</p></span>
                 <span onClick={() => scrollToSection('traduzindoideias')}><h2>Traduzindo Ideias em Códigos</h2></span>
-                <span onClick={() => scrollToSection('')}><p className='gamedevSubtitle'>--</p></span>
+                <span onClick={() => scrollToSection('breakingproblem')}><p className='gamedevSubtitle'>--Quebrando o Problema</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -256,7 +256,11 @@ function GameDevTutorial() {
               </div>
              <div className='box mainContent-box gamedevbox link' id='traduzindoideias'>
                 <h3>Traduzindo Ideias em Códigos</h3>
-                
+                <p>Esta é uma seção de extrema importância para o seu desenvolvimento como programador e  - principalmente - como programador de jogos.
+                  <br></br>A idéia desta seção é ser um tópico geral sobre como partir de uma idealização que você tem de um jogo e transformar essa idéia em conceitos Unity e colocar isso em código.
+                  <br></br><br></br>Saber a sintaxe do C# e conhecer os componentes da Unity não é suficiente para fazer um jogo, a parte mais difícil é olhar para uma ideia na sua cabeça e saber por onde começar.Esta seção existe para resolver exatamente isso: como partir de uma ideia e transformar isso em código funcionando na Unity. É uma habilidade que nenhum tutorial de feature específica vai te ensinar, e que separa quem consegue fazer jogos de quem fica preso esperando o tutorial certo aparecer</p>
+                <h3 className='gamedevTitle link' id='breakingproblem'>Quebrando o Problema</h3>
+                <p></p>
               </div>
             </div>
             <RightBar></RightBar>
