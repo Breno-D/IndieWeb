@@ -260,7 +260,9 @@ function GameDevTutorial() {
                   <br></br>A idéia desta seção é ser um tópico geral sobre como partir de uma idealização que você tem de um jogo e transformar essa idéia em conceitos Unity e colocar isso em código.
                   <br></br><br></br>Saber a sintaxe do C# e conhecer os componentes da Unity não é suficiente para fazer um jogo, a parte mais difícil é olhar para uma ideia na sua cabeça e saber por onde começar.Esta seção existe para resolver exatamente isso: como partir de uma ideia e transformar isso em código funcionando na Unity. É uma habilidade que nenhum tutorial de feature específica vai te ensinar, e que separa quem consegue fazer jogos de quem fica preso esperando o tutorial certo aparecer</p>
                 <h3 className='gamedevTitle link' id='breakingproblem'>Quebrando o Problema</h3>
-                <p></p>
+                <p>Esse é o tópico que motivou a existência deste livro no formato que ele tem hoje. Desde que me tornei um desenvolvedor de jogos bom eu queria escrever 2 mini livros, um manual de sobrevivência de game jams (que teremos uma seção sobre mais a frente) e um sobre como escapar o tutorial hell no desenvolvimento de jogos - que é quando você faz as coisas à partir de um tutorial, mas quando vai desenvolver por si só você não consegue - que seria em grande parte este tópico.</p>
+                <p>Aqui você vai aprender a como pensar como um desenvolvedor de jogos e como quebrar suas idéias de mecanicas em scripts e componentes da Unity; mas para você conseguir pensar em quais componentes você precisa com mais facilidade quando for programar mais para frente, uma coisa é essencial: prática!</p>
+                
               </div>
             </div>
             <RightBar></RightBar>
