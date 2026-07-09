@@ -56,6 +56,7 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('unityfirstscript')}><p className='gamedevSubtitle'>--Criando Nosso Primeiro Script</p></span>
                 <span onClick={() => scrollToSection('traduzindoideias')}><h2>Traduzindo Ideias em Códigos</h2></span>
                 <span onClick={() => scrollToSection('breakingproblem')}><p className='gamedevSubtitle'>--Quebrando o Problema</p></span>
+                <span onClick={() => scrollToSection('organizingcode')}><p className='gamedevSubtitle'>--Organizando o Código</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -306,7 +307,7 @@ function GameDevTutorial() {
                   <br></br>Você tinha pensado nesse comportamento enquanto pesquisava as perguntas anteriores?
                 </p>
                 <p>Nesse tópico eu segui uma linha de raciocínio simples para mostrar como desenvolver o pensamento necessário para um desenvolvedor de jogos, até aqui pensamos em um inimigo isolado, mas jogos raramente têm um só tipo de inimigo, e é aí que entra outra habilidade essencial: <b>refatorar</b> os códigos simples que vamos desenvolvendo! 
-                  <br></br>Claro que nos exemplos usados pensamos em um só inimigo e talvez no nosso jogo final teremos mais alguns tipos, então deveriamos pensar em como mudar os nossos códigos atuais para termos um script mãe de “EnemyMovement” por exemplo, que se separa em scripts filhos de “EnemyPatrol” e “EnemyFollow”, quais funções e parametros ficariam na script mãe, quais seriam exclusivos de cada filho.
+                  <br></br><br></br>Claro que nos exemplos usados pensamos em um só inimigo e talvez no nosso jogo final teremos mais alguns tipos, então deveriamos pensar em como mudar os nossos códigos atuais para termos um script mãe de “EnemyMovement” por exemplo, que se separa em scripts filhos de “EnemyPatrol” e “EnemyFollow”, quais funções e parametros ficariam na script mãe, quais seriam exclusivos de cada filho.
                   <br></br><br></br>Algo Como:<i>
                     <br></br>// EnemyMovement (mãe)
                     <br></br>// Atributos: rigidbody, velocidade
@@ -315,6 +316,7 @@ function GameDevTutorial() {
                   </i></p>
                 <p>Então mesmo sabendo como fazer a linha de pensamento do simples, também devemos ser capazes de expandir isso trazendo os conceitos organizacionais mais intermediários, para não só o nosso jogo ficar mais organizado no futuro, mas também para ele poder crescer sem problemas!</p>
 
+                <h3 className='gamedevTitle link' id='organizingcode'>Organizando o Código</h3>
               </div>
             </div>
             <RightBar></RightBar>
