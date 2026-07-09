@@ -284,7 +284,37 @@ function GameDevTutorial() {
                   <br></br>Por isso é de suma importancia que, ao programar qualquer mecânica de jogos ou até mesmo de outras areas de programação, que a gente pare por um momento para pensar e planejar quais vão ser os passos que vamos tomar e para esquematizar como vai funcionar a nossa mecânica.
                   <br></br>Adotar esse tipo de mentalidade e de estrutura de desenvolvimento também vai nos blindando de cair no tutorial hell que mencionamos anteriormente, pois iremos desde o principio estar pensando em como as coisas funcionam nos seus pequenos detalhes!
                 </p>
-                
+                <p>Vamos seguir o nosso exemplo, o nosso inimigo sem nome deve morrer ao ser pisado por cima pelo nosso jogador, como vamos esquematizar isso?</p>
+                <p>Para isso o nosso inimigo irá precisar colidir com algo, o nosso inimigo ja tem um collider que é o componente que lida com colisões, então vamos criar um script simples e chamá-lo de EnemyCombat.
+                  <br></br>Nesse script simples (que poderia ser quebrado mais, mas para facilitar apenas focarmos no como 'raciocinar' ou como 'quebrar o problema') o que precisaremos para todo o combate do inimigo?
+                  <br></br>O nosso inimigo possui um componente de colisões, mas como detectar essa colisão? isso seria um tópico a ser pesquisado na documentação!
+                  <br></br>Sabendo como detectar colisões, como definimos que essa colisão foi com o nosso Jogador? ou até mesmo se foi com a parte debaixo do pé dele?, ou seja, como detectar não só com quem, mas a direção da minha colisão?
+                  <br></br>Após pesquisar todas essas perguntas, garanto que você ja vai ter um script simples de EnemyCombat esquematizado na sua cabeça!
+                </p>
+                <p>Novamente o nosso script final ficará como desafio para você desenvolver, mas seu esqueleto seria mais ou menos assim:
+                  <br></br>
+                  <i>
+                    //EnemyCombat
+                    <br></br>//Atributos: vida(não necessário no nosso exemplo acima)
+                    <br></br>//Detecção de colisão
+                    <br></br>//------se a colisão for com o jogador
+                    <br></br>//----------se a colisão for por cima, diminuir vida/morrer
+                    <br></br>//----------senão playerHealth.DamagePlayer()
+                  </i>
+                  <br></br>
+                  <br></br>Por fim eu adicionei mais um conceito no script de combate do inimigo, que seria se ele enconstar no player (e não for na direção de um pisão na cabeça) ele deve dar dano!
+                  <br></br>Você tinha pensado nesse comportamento enquanto pesquisava as perguntas anteriores?
+                </p>
+                <p>Nesse tópico eu segui uma linha de raciocínio simples para mostrar como desenvolver o pensamento necessário para um desenvolvedor de jogos, até aqui pensamos em um inimigo isolado, mas jogos raramente têm um só tipo de inimigo, e é aí que entra outra habilidade essencial: <b>refatorar</b> os códigos simples que vamos desenvolvendo! 
+                  <br></br>Claro que nos exemplos usados pensamos em um só inimigo e talvez no nosso jogo final teremos mais alguns tipos, então deveriamos pensar em como mudar os nossos códigos atuais para termos um script mãe de “EnemyMovement” por exemplo, que se separa em scripts filhos de “EnemyPatrol” e “EnemyFollow”, quais funções e parametros ficariam na script mãe, quais seriam exclusivos de cada filho.
+                  <br></br><br></br>Algo Como:<i>
+                    <br></br>// EnemyMovement (mãe)
+                    <br></br>// Atributos: rigidbody, velocidade
+                    <br></br>// EnemyPatrol (filha): pontos A e B
+                    <br></br>// EnemyFollow (filha): referência do alvo a seguir
+                  </i></p>
+                <p>Então mesmo sabendo como fazer a linha de pensamento do simples, também devemos ser capazes de expandir isso trazendo os conceitos organizacionais mais intermediários, para não só o nosso jogo ficar mais organizado no futuro, mas também para ele poder crescer sem problemas!</p>
+
               </div>
             </div>
             <RightBar></RightBar>
