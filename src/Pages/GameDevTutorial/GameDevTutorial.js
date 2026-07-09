@@ -262,6 +262,28 @@ function GameDevTutorial() {
                 <h3 className='gamedevTitle link' id='breakingproblem'>Quebrando o Problema</h3>
                 <p>Esse é o tópico que motivou a existência deste livro no formato que ele tem hoje. Desde que me tornei um desenvolvedor de jogos bom eu queria escrever 2 mini livros, um manual de sobrevivência de game jams (que teremos uma seção sobre mais a frente) e um sobre como escapar o tutorial hell no desenvolvimento de jogos - que é quando você faz as coisas à partir de um tutorial, mas quando vai desenvolver por si só você não consegue - que seria em grande parte este tópico.</p>
                 <p>Aqui você vai aprender a como pensar como um desenvolvedor de jogos e como quebrar suas idéias de mecanicas em scripts e componentes da Unity; mas para você conseguir pensar em quais componentes você precisa com mais facilidade quando for programar mais para frente, uma coisa é essencial: prática!</p>
+                <p>Então vamos começar, tomando o nosso exemplo anterior de um inimigo sem nome e em formato de cogumelo que patrulha de um ponto A até um ponto B, como partimos da idealização dele e pensamos em tudo que precisamos?</p>
+                <p>Para isso precisamos ir quebrando todos os comportamentos do inimigo até suas minimas partes:
+                  <br></br>O nosso inimigo irá patrulhar de um ponto até outro, logo o nosso inimigo vai se mover e se ele vai se mover precisamos de um Rigidbody2D adicionado à ele e um Collider2D para que ele não atravesse o chão!
+                  <br></br>Se nosso inimigo vai se mover, existe algum componente da Unity que faça essa movimentação do inimigo? se a gente não sabe esta resposta devemos pesquisar e uma pesquisa rápida na documentação confirma que não existe um componente pronto para isso, logo devemos criar nosso script EnemyMovement e adicionar no GameObject do inimigo
+                  <br></br>Se o nosso inimigo vai se mover entre dois pontos fixos, quais informações devemos ter para esse movimento?
+                  <br></br><br></br>- A localização dos pontos A e B pelos quais o inimigo vai patrulhar, e se falamos de localização, estamos falando de Transform
+                  <br></br>- O ponto que o inimigo está se movimentando em direção no momento
+                  <br></br>- O Rigidbody2D do nosso inimigo que irá movimentar o seu GameObject
+                  <br></br>- Um parametro serializado no nosso script de EnemyMovement de velocidade, para ajustarmos o quão rapido esse inimigo vai patrulhar diretamente do Inspector
+                </p>
+                <p>O nosso código, que você pode desenvolver como um exercício, fica algo como:
+                  <br></br><i>// EnemyMovement
+                    <br></br>// Atributos: objetivo, transformA, transformB, velocidade(com serializefield), rigidbody
+                    <br></br>// Awake: pegar referência do Rigidbody
+                    <br></br>// Update: mover em direção ao objetivo atual
+                    <br></br>//se chegou no objetivo, trocar para o outro transform</i>
+                </p>
+                <p>Veja como foi rápido e simples de pegar uma mecânica que queremos desenvolver e ir quebrando ela em pontos menores e menores até chegarmos em quais componentes vamos precisar e depois olhar para estes componentes e o que eles fazem e pensar em quais parametros seriam necessários neles para que o nosso comportamento funcionasse!
+                  <br></br>
+                  <br></br>Por isso é de suma importancia que, ao programar qualquer mecânica de jogos ou até mesmo de outras areas de programação, que a gente pare por um momento para pensar e planejar quais vão ser os passos que vamos tomar e para esquematizar como vai funcionar a nossa mecânica.
+                  <br></br>Adotar esse tipo de mentalidade e de estrutura de desenvolvimento também vai nos blindando de cair no tutorial hell que mencionamos anteriormente, pois iremos desde o principio estar pensando em como as coisas funcionam nos seus pequenos detalhes!
+                </p>
                 
               </div>
             </div>
