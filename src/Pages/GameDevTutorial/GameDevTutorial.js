@@ -317,6 +317,20 @@ function GameDevTutorial() {
                 <p>Então mesmo sabendo como fazer a linha de pensamento do simples, também devemos ser capazes de expandir isso trazendo os conceitos organizacionais mais intermediários, para não só o nosso jogo ficar mais organizado no futuro, mas também para ele poder crescer sem problemas!</p>
 
                 <h3 className='gamedevTitle link' id='organizingcode'>Organizando o Código</h3>
+                <p>Para começar, vamos falar de algo simples mas muito deixado de lado pelos iniciantes que é se importar com a estrutura do seu projeto.
+                  <br></br>Além de termos os nossos códigos bem organizados, nós precisamos que a estrutura do nosso projeto inteira seja organizada, para que a gente consiga buscar coisas mais facilmente na nossa estrutura de pastas!
+                </p>
+                <p>Para fazer isso de maneira simples podemos seguir algumas regrinhas básicas que já farão toda a diferença nos seus projetos. Pode parecer desnecessário quando o projeto tem 5 arquivos, mas quando ele tiver 200, cada minuto procurando o que você precisa é tempo roubado do desenvolvimento real
+                  <br></br>basta:
+                  <i>
+                  <br></br>-Criar uma pasta para os tópicos grandes (ex: Scripts, Artes, Sons, etc)
+                  <br></br>-Criar subpastas de acordo com a especificidade (ex: Scripts/Player/Movimento/PlayerMove.cs ou Scripts/Player/Combate/PlayerHealth.cs ou Artes/Spritesheets/Player [ou podemos imaginar como Artes/Player/Spritesheets])
+                  <br></br>-Mesmo que tenhamos duas opções de escolha (como o ultimo exemplo acima), SEGUIR O MESMO PADRÃO PELO PROJETO TODO!!!(ou seja, se criamos Artes/Spritesheets/Player, teremos obrigatóriamente Artes/Spritesheets/Enemy e não Artes/Enemy/Spritesheets)
+                  </i>
+                </p>
+                <p>Com isso teremos um projeto muito mais organizado e fácil de se navegar!</p>
+                <p>Organizamos as pastas, mas a organização não para por aí, ela também vale dentro da própria lógica de quando dividir um comportamento em scripts separados.
+                  <br></br>Pensando nos scripts, com todas estas pastas e subpastas de mecânicas e comportamentos, quando devemos criar um novo script para um comportamento e quando devemos apenas adicionar no nosso script 'PlayerCombat.cs' por exemplo?</p>
               </div>
             </div>
             <RightBar></RightBar>
