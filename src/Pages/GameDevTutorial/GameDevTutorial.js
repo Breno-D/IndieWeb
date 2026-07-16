@@ -331,6 +331,7 @@ function GameDevTutorial() {
                 <p>Com isso teremos um projeto muito mais organizado e fácil de se navegar!</p>
                 <p>Organizamos as pastas, mas a organização não para por aí, ela também vale dentro da própria lógica de quando dividir um comportamento em scripts separados.
                   <br></br>Pensando nos scripts, com todas estas pastas e subpastas de mecânicas e comportamentos, quando devemos criar um novo script para um comportamento e quando devemos apenas adicionar no nosso script 'PlayerCombat.cs' por exemplo?</p>
+                <p></p>
               </div>
             </div>
             <RightBar></RightBar>
