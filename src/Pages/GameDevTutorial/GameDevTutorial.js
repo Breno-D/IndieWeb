@@ -331,7 +331,16 @@ function GameDevTutorial() {
                 <p>Com isso teremos um projeto muito mais organizado e fácil de se navegar!</p>
                 <p>Organizamos as pastas, mas a organização não para por aí, ela também vale dentro da própria lógica de quando dividir um comportamento em scripts separados.
                   <br></br>Pensando nos scripts, com todas estas pastas e subpastas de mecânicas e comportamentos, quando devemos criar um novo script para um comportamento e quando devemos apenas adicionar no nosso script 'PlayerCombat.cs' por exemplo?</p>
-                <p></p>
+                <p>Devemos pensar então em um principio de responsabilidade UNICA para o nossos scripts (também conhecido como SRP, ou Single Responsability Principle), isso é um princípio bem famoso da POO e é o S do SOLID, que são 5 princípios de desenvolvimento que buscamos seguir para escrever código limpo e escalável em POO, e que iremos fazer um deep dive na parte de tópicos avançados do livro.</p>
+                <p>Mas o que isso quer dizer?
+                  <br></br>Isso é simples, devemos pensar que um script nosso deve ser responsavél por apenas UMA coisa, ou seja, não teremos um script Enemy.cs que cuida do movimento, vida, combate e tudo que diz respeito ao inimigo. Nós vamos quebrando esses comportamentos em scripts menores e menores até termos um com uma responsabilidade apenas!
+                  <br></br>Como por exemplo, podemos ter um script de EnemyHealth.cs que cuida da vida do inimigo, com uma variavel 'vida' e métodos de 'TakeDamage()' e 'HealDamage()'.
+                </p>
+                <p>Muitas vezes se estamos pensando em GameJams que são um momento de desenvolvimento mais acelerado acabamos passando despercebido e tendo scripts com duas ou mais responsabilidades (como por exemplo se esse nosso script de EnemyHealth.cs também tivesse uma variavél de enemyHealthBar e um método de UpdateEnemyHealthUi()).
+                  <br></br>Mas esse desenvolvimento acelerado fica na frente de escalabilidade do nosso projeto, por isso devemos quebrar esse script em dois distintos, EnemyHealth.cs e EnemyHealthUI.cs por exemplo, para que consigamos isolar um problema caso ele apareça e ganharmos tempo de desenvolvimento e correções!
+                  <br></br>Lembra do nosso EnemyMovement se dividindo em EnemyPatrol e EnemyFollow? Aquilo já era SRP na prática!
+                </p>
+                <p>Organizar pastas e scripts é a base para um projeto saudável, mas mesmo com tudo bem estruturado erros irão acontecer. No próximo tópico vamos ver como usar o Console para encontrá-los rapidamente</p>
               </div>
             </div>
             <RightBar></RightBar>
