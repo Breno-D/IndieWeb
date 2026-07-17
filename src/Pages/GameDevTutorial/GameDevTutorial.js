@@ -57,6 +57,7 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('traduzindoideias')}><h2>Traduzindo Ideias em Códigos</h2></span>
                 <span onClick={() => scrollToSection('breakingproblem')}><p className='gamedevSubtitle'>--Quebrando o Problema</p></span>
                 <span onClick={() => scrollToSection('organizingcode')}><p className='gamedevSubtitle'>--Organizando o Código</p></span>
+                <span onClick={() => scrollToSection('console')}><p className='gamedevSubtitle'>--Debug.Log e Console</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -341,6 +342,8 @@ function GameDevTutorial() {
                   <br></br>Lembra do nosso EnemyMovement se dividindo em EnemyPatrol e EnemyFollow? Aquilo já era SRP na prática!
                 </p>
                 <p>Organizar pastas e scripts é a base para um projeto saudável, mas mesmo com tudo bem estruturado erros irão acontecer. No próximo tópico vamos ver como usar o Console para encontrá-los rapidamente</p>
+                <h3 className='gamedevTitle link' id='console'>Debug.Log e Console</h3>
+                <p>piriri pororo</p>
               </div>
             </div>
             <RightBar></RightBar>
