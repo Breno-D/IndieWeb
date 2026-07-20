@@ -58,6 +58,7 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('breakingproblem')}><p className='gamedevSubtitle'>--Quebrando o Problema</p></span>
                 <span onClick={() => scrollToSection('organizingcode')}><p className='gamedevSubtitle'>--Organizando o Código</p></span>
                 <span onClick={() => scrollToSection('console')}><p className='gamedevSubtitle'>--Debug.Log e Console</p></span>
+                <span onClick={() => scrollToSection('erroscomuns')}><p className='gamedevSubtitle'>--Erros Comuns de Iniciante</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -352,6 +353,7 @@ function GameDevTutorial() {
                   <br></br><b>O Console</b>, a janela onde todas as suas mensagens de tempo de execução serão mostradas, não só as suas (ou seja, onde você escreveu "Debug.Log"), mas também de seus pacotes e onde os erros simples e críticos de sua aplicação serão avisados para você pela Unity.
                 </p>
                 <p>Com o Debug.Log e o Console em mãos, você já tem as ferramentas para investigar quase qualquer comportamento estranho no seu jogo. Mas alguns erros são tão comuns entre os iniciantes que vale a pena conhecê-los antes mesmo de encontrá-los, para quando aparecerem no seu Console, você saber exatamente o que fazer e é isso que veremos no próximo tópico.</p>
+                <h3 className='gamedevTitle link' id='erroscomuns'>Erros Comuns de Iniciante</h3>
               </div>
             </div>
             <RightBar></RightBar>
