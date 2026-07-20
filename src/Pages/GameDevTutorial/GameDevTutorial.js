@@ -343,7 +343,15 @@ function GameDevTutorial() {
                 </p>
                 <p>Organizar pastas e scripts é a base para um projeto saudável, mas mesmo com tudo bem estruturado erros irão acontecer. No próximo tópico vamos ver como usar o Console para encontrá-los rapidamente</p>
                 <h3 className='gamedevTitle link' id='console'>Debug.Log e Console</h3>
-                <p>piriri pororo</p>
+                <p>Enquanto desenvolvemos nossos jogos inevitavelmente encontraremos alguns bugs ou comportamentos indesejados, para consguirmos testar o nosso código antes de termos uma implementação visual, buscar e corrigir erros e até nos avisar sobre falhas graves no nosso código, temos duas coisas que são de extrema importancia:
+                  <br></br><br></br><b>O Debug.Log</b>, uma função que podemos chamar nos nossos scripts e ele escreverá o que passarmos para a função, podendo ser uma frase qualquer ou até mesmo retorno de funções e objetos.
+                  <br></br>Quando passamos por exemplo uma variavel do tipo Vector2 para ele, o que ele escreverá será um vetor com 2 pontos (100, 90) por exemplo, que seria o valor da nossa variável do tipo Vector2 no momento!
+                  <br></br>O Debug.Log também tem algumas variações para tipos de mensagens diferentes (como Debug.LogError ou Debug.LogWarning) mas para simplesmente testar nossa aplicação e buscar granularmente onde o nosso erro se encontra, um Debug.Log comum serve sempre!
+
+                  <br></br>
+                  <br></br><b>O Console</b>, a janela onde todas as suas mensagens de tempo de execução serão mostradas, não só as suas (ou seja, onde você escreveu "Debug.Log"), mas também de seus pacotes e onde os erros simples e críticos de sua aplicação serão avisados para você pela Unity.
+                </p>
+                <p>Com o Debug.Log e o Console em mãos, você já tem as ferramentas para investigar quase qualquer comportamento estranho no seu jogo. Mas alguns erros são tão comuns entre os iniciantes que vale a pena conhecê-los antes mesmo de encontrá-los, para quando aparecerem no seu Console, você saber exatamente o que fazer e é isso que veremos no próximo tópico.</p>
               </div>
             </div>
             <RightBar></RightBar>
