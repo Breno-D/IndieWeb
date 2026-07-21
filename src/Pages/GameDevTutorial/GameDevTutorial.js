@@ -59,6 +59,10 @@ function GameDevTutorial() {
                 <span onClick={() => scrollToSection('organizingcode')}><p className='gamedevSubtitle'>--Organizando o Código</p></span>
                 <span onClick={() => scrollToSection('console')}><p className='gamedevSubtitle'>--Debug.Log e Console</p></span>
                 <span onClick={() => scrollToSection('erroscomuns')}><p className='gamedevSubtitle'>--Erros Comuns de Iniciante</p></span>
+                <span onClick={() => scrollToSection('navegandocenas')}><h2>Navegando entre Cenas</h2></span>
+                <span onClick={() => scrollToSection('scenemanager')}><p className='gamedevSubtitle'>--Scene Manager</p></span>
+                <span onClick={() => scrollToSection('scenepersistencia')}><p className='gamedevSubtitle'>--Persistência entre Cenas</p></span>
+                <span onClick={() => scrollToSection('scenebasic')}><p className='gamedevSubtitle'>--Estrutura básica de um Jogo</p></span>
               </div>
               <div className='box mainContent-box gamedevbox link' id='primeirospassos'>
                 <h3>Primeiros Passos</h3>
@@ -375,6 +379,12 @@ function GameDevTutorial() {
                   <br></br>Você agora sabe quebrar uma ideia em componentes, organizar seu código para escalar, e usar as ferramentas certas para debugar quando algo sai errado.
                   <br></br>No próximo módulo, vamos usar essas habilidades para conectar tudo isso em um jogo com fluxo completo: do menu ao game over, navegando entre cenas.
                 </p>
+              </div>
+              <div className='box mainContent-box gamedevbox link' id='navegandocenas'>
+                <h3>Navegando entre Cenas</h3>
+                <h3 className='gamedevTitle link' id='scenemanager'>Scene Manager</h3>
+                <h3 className='gamedevTitle link' id='scenepersistencia'>Persistência entre Cenas</h3>
+                <h3 className='gamedevTitle link' id='scenebasic'>Estrutura básica de um Jogo</h3>
               </div>
             </div>
             <RightBar></RightBar>
