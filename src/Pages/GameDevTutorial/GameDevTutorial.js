@@ -354,6 +354,27 @@ function GameDevTutorial() {
                 </p>
                 <p>Com o Debug.Log e o Console em mãos, você já tem as ferramentas para investigar quase qualquer comportamento estranho no seu jogo. Mas alguns erros são tão comuns entre os iniciantes que vale a pena conhecê-los antes mesmo de encontrá-los, para quando aparecerem no seu Console, você saber exatamente o que fazer e é isso que veremos no próximo tópico.</p>
                 <h3 className='gamedevTitle link' id='erroscomuns'>Erros Comuns de Iniciante</h3>
+                <p>Agora vamos falar rapidamente dos erros mais comuns de aparecerem no seu Console quando iniciante, para você ter uma ideia geral de onde buscar para corrigí-los.</p>
+                <p>Temos dois erros principais que devem somar cerca de 80% dos seus erros no começo que são:
+                  <br></br><b>NullReferenceException: Object reference not set to an instance of an object.</b> Esse erro acontece quando você tenta acessar/alterar/ler uma variável que não tem valor (null). Acontece principalmente quando você cria uma variável com [SerializeField] e da play para testar o seu jogo sem antes setar o valor dessa variável no Inspector.
+                  <br></br><b>IndexOutOfRangeException.</b> Acontece quando temos um array/lista/coleção e tentamos acessar uma posição inexistente nesses tipos (por exemplo, tenho uma lista com 3 elementos e tento acessar a posição 5).
+                  <br></br><b>MissingComponentException.</b> Mais raro de acontecer, mas acontece quando utilizamos a função GetComponent, que falamos anteriormente, e tentamos pegar um componente que não existe no nosso objeto (por exemplo, dando um GetComponentRigidbody2D() e termos esquecido de adicionar um Rigidbody2D no nosso GameObject).
+                </p>
+                <p>Uma dica valiosa: clicar duas vezes na mensagem de erro no Console geralmente abre o script exatamente na linha onde o problema ocorreu(ou caso isso não funcione, na propria mensagem de texto conseguimos ler a linha onde cada erro ocorreu)
+                  <br></br>Outra dica importante é que, se o erro ocorre em uma variável que conversa com muitos scripts, ao clicar na mensagem de erro ela exibirá uma cascata de onde esse erro está se propagando, como:
+                  <br></br>
+                  <br></br>
+                  <i>NullReferenceException: Object reference not set to an instance of an object.
+                    <br></br>PlayerHealth.DamagePlayer (System.int32 damageTaken) (at Assets/Scripts/Player/Combat/PlayerHealth.cs:26)
+                    <br></br>GameManager.Start() (at Assets/Scripts/Managers/GameManager.cs:15)
+                  </i>
+                  <br></br>
+                  <br></br>Isso quer dizer que o erro aconteceu em PlayerHealth.DamagePlayer() na linha 26, que foi chamada por GameManager.Start() na linha 15. Com isso podemos investigar se o nosso erro está realmente dentro da nossa função que aconteceu o erro ou nas funções que chamaram ela por causa de algum erro de inicialização (por exemplo: chamar uma função passando um parametro nulo)
+                </p>
+                <p>Com isso encerramos a seção que é o coração deste livro: aprender a pensar como desenvolvedor, não apenas seguir passos ou tutoriais.
+                  <br></br>Você agora sabe quebrar uma ideia em componentes, organizar seu código para escalar, e usar as ferramentas certas para debugar quando algo sai errado.
+                  <br></br>No próximo módulo, vamos usar essas habilidades para conectar tudo isso em um jogo com fluxo completo: do menu ao game over, navegando entre cenas.
+                </p>
               </div>
             </div>
             <RightBar></RightBar>
